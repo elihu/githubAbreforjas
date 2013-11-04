@@ -2,20 +2,25 @@ import github
 # -*- coding: iso-8859-15
 import sys
 
+#funcion para contar los elementos de un conjunto
 def count(param):
    	acum = 0
 	for a in param:
 		acum = acum + 1
 	return acum
-		
+
+#Se pasa como argumento de main el indice inicial y final de los proyectos que se quieren parsear		
 if len(sys.argv) == 3:
         i = int(sys.argv[1])
 	j = int(sys.argv[2])
-	datos = github.Github("user", "password")
+	datos = github.Github("user", "password") #Para evitar el limite de accesos que impone la api de github a usuarios anonimos hay que identificarse
 
 	repositorios = datos.get_repos()
 	for i in range(i, j):
 		repo = repositorios[i]
+		
+		#Datos de models
+		
 		#print "Id " repo.id
 		print "--------------------"	
 		print i
@@ -56,6 +61,7 @@ if len(sys.argv) == 3:
 		#print "processdate"						
 		print "title: ", repo.full_name
 		
+		#Datos extra
 		print "-----------------------------------"
 
 		print "URL: ", repo.url
