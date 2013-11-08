@@ -21,12 +21,11 @@ if len(sys.argv) == 3:
 		
 		#Datos de models
 		
-		#print "Id " repo.id
 		print "--------------------"	
 		print i
 		print "--------------------"
 		
-		#print "external_id"
+		print "external_id", repo.id
 		print "name: ", repo.name
 		#print "dataset"		
 		print "homepage: ", repo.homepage		
