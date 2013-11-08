@@ -45,40 +45,6 @@ if len(sys.argv) == 3:
 				print "description", mileston.description
 				print "descartado"
 					
-	'''try:
-		print "totaltickets: ", count(repo.get_issues())
-	except:
-		print "Las issues no estan habilitadas"
-	print "opentickets: ", repo.open_issues_count
-	print "gcstars: ", count(repo.get_stargazers())
-	
-	print "ghwatchers: ", repo.watchers_count
-	print "repoforks: ", repo.forks_count
-	if repo.private:		
-		print "repoacces: private"
-	else:
-		print "repoacces: public"
-	#print "repobrowse"	
-	#print "totalreporeads"			
-	print "totalrepowrites: ", count(repo.get_commits())
-	#print "sfranking"
-	#print "downloaddate"
-	#print "processdate"						
-	print "title: ", repo.full_name
-	
-	print "-----------------------------------"
-
-	print "URL: ", repo.url
-	print "Downloads: ", count(repo.get_downloads())
-	try:
-		print "Colaboradores: ", count(repo.get_collaborators())
-	except:
-		print "Los colaboradores no estan habilitados"
-	print "Comments: ", count(repo.get_comments())
-	print "Fecha actualizacion: ", repo.updated_at
-	print "Tamaño: ", repo.size
-	print "##############################################"
-	print'''
 else:
         print ("Este programa necesita un parámetro")
 	print ("Uso: $python proyectos.py n0 n1")
