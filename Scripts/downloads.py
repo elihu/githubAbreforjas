@@ -12,7 +12,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 	i = int(sys.argv[1])
 	j = int(sys.argv[2])
 	
-	datos = github.Github("javosuher", "c787604")
+	datos = github.Github("user", "password")
 	repositorios = datos.get_repos()
 	for i in range(i, j) :
 		repositorio = repositorios[i]
