@@ -5,7 +5,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 	i = int(sys.argv[1])
 	j = int(sys.argv[2])
 	
-	datos = github.Github("user", "password") #Para evitar el limite de accesos que impone la api de github a usuarios anonimos hay que identificarse
+	datos = github.Github("user", "password")
 	usuarios = datos.get_users()
 	for i in range(i, j) :
 		usuario = usuarios[i]
@@ -31,5 +31,5 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 		print "##############################################"
 		print
 else :
-	print ("Este programa necesita un parametro") 
+	print ("Este programa necesita dos parametros") 
 	print ("Uso: $python proyectos.py n0 n1")
