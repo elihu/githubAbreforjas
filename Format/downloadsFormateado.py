@@ -30,7 +30,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 			
 				#Escribir al final del fichero
 				try :
-					ficheroDownloads.write('"' + repositorio.id + '", "')
+					ficheroDownloads.write('"' + str(repositorio.id) + '", "')
 				except :
 					ficheroDownloads.write('"", "')
 				try :
@@ -42,7 +42,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 				except :
 					ficheroDownloads.write('", "')
 				try :
-					ficheroDownloads.write(download.size + '", "')
+					ficheroDownloads.write(str(download.size) + '", "')
 				except :
 					ficheroDownloads.write('", "')
 				try :
@@ -50,7 +50,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 				except :
 					ficheroDownloads.write('", "')
 				try :
-					ficheroDownloads.write(download.download_count + '"\n')
+					ficheroDownloads.write(str(download.download_count) + '"\n')
 				except :
 					ficheroDownloads.write('"\n')
 					
