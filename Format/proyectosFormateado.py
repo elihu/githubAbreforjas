@@ -11,7 +11,7 @@ def count(param):
 if len(sys.argv) == 3:
         i = int(sys.argv[1])
 	j = int(sys.argv[2])
-	datos = github.Github("elihu", "c950660")
+	datos = github.Github("usuario", "contraseña")
 
 	repositorios = datos.get_repos()
 	
