@@ -6,7 +6,7 @@ if len(sys.argv) == 3: #Para poner un rango de usuarios que queremos ver
 	i = int(sys.argv[1])
 	j = int(sys.argv[2])
 	
-	datos = github.Github("user", "password")
+	datos = github.Github("usuario", "contraseña")
 	usuarios = datos.get_users()
 	ficheroUsers = codecs.open("users.csv", "w", "utf-8") #Abrir fichero
 	ficheroUsers.write("id, username, name, email, created\n")

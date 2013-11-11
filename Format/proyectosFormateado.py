@@ -2,6 +2,7 @@ import github
 # -*- coding: iso-8859-15
 import sys
 
+
 def count(param):
    	acum = 0
 	for a in param:
@@ -14,12 +15,9 @@ if len(sys.argv) == 3:
 	datos = github.Github("usuario", "contraseña")
 
 	repositorios = datos.get_repos()
-	
-	print "external_id, name, homepage, created, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, colaborators, comments, update_date, size, language"
+	print "external_id, name, homepage, created, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, colaborators, comments, update_date, size, language"
 	for i in range(i, j):
 		repo = repositorios[i]
-		
-		
 		print repo.id, " , ", repo.name, " , ", repo.homepage, " , ", repo.created_at, " , ", repo.description, " , ",
 		try:
 			print count(repo.get_issues()), " , ",
@@ -36,7 +34,7 @@ if len(sys.argv) == 3:
 		else:
 			print "public", " , ",
 			
-		print count(repo.get_commits()), " , ", repo.full_name, " , ", repo.url, " , ", count(repo.get_downloads()), " , ",
+		print count(repo.get_commits()), " , ", repo.full_name, " , ", repo.url, " , ",
 		try:
 			print count(repo.get_collaborators()), " , ",
 		except:
