@@ -15,15 +15,15 @@ if len(sys.argv) == 3:
 	datos = github.Github("usuario", "contraseña")
 
 	repositorios = datos.get_repos()
-	fichero = codecs.open("projects.csv", "w", "utf-8") #Abrir fichero
-	fichero.write("external_id, name, homepage, created, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, colaborators, comments, update_date, size, language")
-	cadena = ""
+	fichero = codecs.open("projects.csv", "a", "utf-8") #Abrir fichero
+	#fichero.write("external_id, name, homepage, created, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, colaborators, comments, update_date, size, language")
+	#fichero.write('"\n')
 	for i in range(i, j):
 		repo = repositorios[i]
 		try :
 			fichero.write('"' + str(repo.id) + '", "')
 		except :
-			fichero.write('"", "')
+			fichero.write('", "')
 		try :
 			fichero.write(repo.name + '", "')
 		except :
@@ -48,32 +48,32 @@ if len(sys.argv) == 3:
 		try :
 			fichero.write(str(repo.open_issues_count) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write(str(0) +'", "')
 		
 		try :
 			fichero.write(str(count(repo.get_stargazers())) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write(str(0) +'", "')
 		try :		
 			fichero.write(str(count(repo.get_milestones())) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write(str(0) +'", "')
 		try :
 			fichero.write(str(repo.watchers_count) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write(str(0) +'", "')
 		try :
 			fichero.write(str(repo.forks_count) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write(str(0) +'", "')
 		if repo.private:
 			try :
-				fichero.write('"private, "')
+				fichero.write('private" ,"')
 			except :
 				fichero.write('", "')
 		else:
 			try :
-				fichero.write('"public, "')
+				fichero.write('public", "')
 			except :
 				fichero.write('", "')
 		try :
@@ -91,15 +91,15 @@ if len(sys.argv) == 3:
 		try :
 			fichero.write(str(count(repo.get_downloads())) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write('0", "')
 		try :
 			fichero.write(str(count(repo.get_collaborators())) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write('0", "')
 		try :
 			fichero.write(str(count(repo.get_comments())) + '", "')
 		except :
-			fichero.write('"0, "')
+			fichero.write('0", "')
 		try :
 			fichero.write(str(repo.updated_at) + '", "')
 		except :
@@ -109,10 +109,10 @@ if len(sys.argv) == 3:
 		except :
 			fichero.write('", "')
 		try :
-			fichero.write(repo.language + '", "')
+			fichero.write(repo.language + '"')
 		except :
-			fichero.write('", "')
-		fichero.write("\n")
+			fichero.write('"')
+		fichero.write('\n')
 		print i
 	fichero.close()
 		
