@@ -1,0 +1,690 @@
+" title"," created"," updated"," totalcomments"
+"Improve gitmodules file parsing","2013-10-15 05:54:52","2013-10-15 05:54:52",0
+"2.0 Support?","2013-09-17 16:36:08","2013-09-17 16:36:08",0
+"replace rake/rdoctask with rdoc/task","2013-08-26 12:02:07","2013-09-03 16:58:00",1
+"License missing from gemspec","2013-08-13 14:34:40","2013-08-13 14:34:40",0
+"No method error in loop.rb","2013-08-08 04:01:21","2013-08-08 10:41:24",1
+"Load repo upwards in specified path","2013-07-11 15:11:18","2013-07-11 15:15:28",0
+"Grit clone using ssh agent","2013-07-03 23:02:55","2013-07-03 23:02:55",0
+"Fix two bugs","2013-06-27 07:25:37","2013-06-27 07:25:37",0
+"Pass options to Grit::Repo#remote_fetch","2013-06-13 05:06:28","2013-06-13 05:06:28",0
+"Exception raised when checking out a specific commit","2013-04-18 02:01:50","2013-05-27 12:57:06",1
+"Fix Tempfile args in Ruby 1.9 to use binary enc","2013-04-13 21:13:42","2013-05-27 12:50:13",0
+"Implemented #163: grep search feature","2013-04-08 01:51:38","2013-05-27 12:58:39",3
+"Use --work-tree in 'native' git method","2013-04-02 11:59:05","2013-04-18 10:58:35",1
+"Modified to use UTF-8 encoding. (Works with Ruby 2.0)","2013-03-19 17:43:49","2013-10-18 08:37:24",2
+"Make tests pass in Ruby 2.0.","2013-03-14 23:56:20","2013-04-10 06:41:15",1
+"Fix deprecation error and warning in test suite","2013-03-14 20:51:15","2013-03-14 20:51:15",0
+"Index - remove empty directories","2013-02-23 19:45:29","2013-02-25 14:57:49",1
+"Issue 117: Fixed wrong magic comparition.","2013-02-13 06:59:44","2013-02-13 07:00:05",0
+"Ruby 2.0 compatibility fix","2013-02-12 12:13:59","2013-02-12 12:32:00",1
+"commit_index and commits_since don't seem te work well together. Intermitting problem ","2013-01-18 21:47:56","2013-01-18 21:48:55",0
+"Support Ruby >= 2.0 not only 1.9","2013-01-16 03:40:51","2013-05-17 10:58:39",1
+"If there is non-ascii chars in the filename, diff parse failed.","2012-12-29 01:13:51","2013-06-27 05:53:02",0
+"Grit doesn't correctly identify renames","2012-11-07 21:35:37","2012-11-07 21:35:37",0
+"Fix git executable search on windows (improved).","2012-10-23 10:45:21","2012-10-23 10:46:17",1
+"Minor change, added method to Status class","2012-10-17 10:59:23","2012-10-17 10:59:23",0
+"Make refs support submodules","2012-10-07 22:29:41","2013-06-25 07:47:05",4
+"use git-mktag for Grit::Tag.create_tag_object","2012-10-03 19:40:04","2012-10-03 19:41:08",1
+"Differentiate between Modified files and Unstaged changes","2012-09-17 01:04:27","2012-09-17 01:06:34",1
+"NoMethodError when dealing with a GPG signed commit","2012-09-07 06:42:16","2012-09-07 06:42:16",0
+"Grit crashes when dealing with files that have accented characters in them","2012-09-02 05:43:16","2012-09-02 08:56:28",1
+"Commit timestamps retain timezone info in Ruby 1.9.","2012-08-23 11:51:11","2012-11-26 21:35:27",2
+"exclude git directories from git_binary function","2012-08-20 14:11:05","2012-08-20 14:11:05",0
+"Incorrect array access fix","2012-08-16 01:35:33","2012-08-16 01:35:33",0
+"change to the correct way of init a bare repo","2012-08-07 06:13:51","2012-08-07 06:13:51",0
+"Handle encoding header of Git commits when possible.","2012-08-02 13:55:22","2012-08-06 17:39:31",3
+"Grit::Repo#commits_since incorrectly lists all commits","2012-07-16 20:36:24","2012-08-05 11:10:05",1
+"Files are deleted after commit","2012-07-10 09:45:37","2012-09-22 07:17:04",1
+"Is it alive?","2012-07-06 19:41:58","2012-07-20 13:24:29",1
+"strip newlines from tree entry names","2012-07-03 20:30:21","2012-07-03 20:30:21",0
+"Parse log with options","2012-06-29 19:10:28","2012-06-29 19:10:28",0
+"Is there any plans to rewrite grit with rugged?","2012-06-20 14:49:22","2012-06-20 14:49:22",0
+"More efficient counting of tags/remotes/heads ","2012-06-03 00:57:01","2012-06-03 00:57:01",0
+"Feature/workdir","2012-05-24 09:13:56","2012-05-24 09:13:56",0
+"Feature/basename","2012-05-24 09:10:58","2012-05-24 09:10:58",0
+"Hooks","2012-05-23 17:06:33","2013-04-19 13:20:14",0
+"Grit::GitRuby::Internal::PackFormatError","2012-05-21 06:17:40","2013-03-22 14:15:09",7
+"Added UTF-8 to filenames","2012-05-15 09:25:34","2013-02-27 04:19:11",3
+"Travis","2012-05-05 20:02:47","2013-02-12 12:15:06",3
+"Repo.git.refs should support separate .git directories","2012-05-05 19:32:44","2013-05-31 12:14:06",1
+"Add Gemfile","2012-05-05 19:06:14","2012-05-05 19:06:14",0
+"Grit::Actor#== method for testing equality.","2012-05-01 03:08:12","2012-05-01 03:08:12",0
+"rev_list broken with utf-8 commit message (Encoding::CompatibilityError)","2012-04-20 18:40:17","2012-05-12 09:51:36",1
+"Make Grit::Status ignore submodule-contained files","2012-03-27 08:30:03","2012-03-27 08:30:03",0
+"Bump version and release on Rubygems?","2012-03-14 02:00:42","2012-06-02 19:57:48",2
+"Make grit compatible with git projects using the gitfile repository format","2012-02-07 12:31:35","2012-02-07 12:32:57",0
+"Add Grit::Repo::remote method","2011-12-03 13:10:08","2012-01-31 13:08:50",1
+"Whitespaces in filenames lead to truncated names in commit stats","2011-11-22 16:25:32","2013-05-13 19:45:00",0
+"Fixed Grit::Repo#diff to show diff for commits to unicode file names","2011-11-13 05:43:06","2011-11-13 05:43:06",0
+"added correct location detection for win32 git binary","2011-10-20 12:40:57","2011-10-20 12:40:57",0
+"StatusFile::ignored","2011-10-15 06:51:57","2011-10-15 06:51:57",0
+"Commit stats for Ruby libraries does not work (Rails app does)","2011-10-08 08:18:59","2011-10-08 08:18:59",0
+"Faster tree parsing","2011-09-26 20:56:30","2011-10-14 10:19:28",3
+"Ability to specify line range for git blame","2011-09-15 17:08:30","2013-07-18 19:08:35",1
+"Exception: undefined method `close' for nil:NilClass","2011-09-14 16:03:30","2011-09-14 16:03:30",0
+"remote_list doesn't show newly created remotes","2011-08-29 07:05:18","2011-08-29 07:16:27",1
+"Allow numeric option arguments","2011-08-24 16:39:10","2012-06-28 20:31:34",2
+"test failures","2011-08-16 10:08:13","2011-08-16 10:08:13",0
+"tags method does not return but burns CPU","2011-08-15 12:43:38","2012-05-25 08:07:34",6
+"Fixing numstat parsing for cases where files have spaces in their filepath","2011-08-14 00:32:31","2013-10-16 20:20:21",1
+"Use native cat-file instead of Grit::GitRuby#cat_file to get blob size","2011-08-05 01:13:04","2011-08-05 01:15:28",1
+"Fix two ifs","2011-08-02 06:06:59","2011-08-03 08:36:02",2
+"Fixed Grit::Git#options_to_argv generates invalid sequence of arguments.","2011-07-20 08:36:34","2011-07-20 08:36:34",0
+"Fixing a typo, :base should be :bare","2011-07-19 14:47:54","2011-07-19 14:47:54",0
+"Fix Repository#rev_list silently ignoring :since and :until when they're of a class other than Time","2011-07-13 02:04:33","2013-10-16 18:12:24",1
+"Fix Repository#rev_list when called with :until","2011-07-12 08:39:33","2011-07-13 01:53:14",1
+"Better count","2011-07-07 01:48:19","2013-10-16 20:39:09",1
+"Warning about ""spawn"" method redefinition","2011-06-21 07:40:20","2011-06-21 11:12:15",3
+"Fix git executable search on windows.","2011-06-16 03:56:13","2012-10-19 10:12:13",4
+"Fixed commits_since method","2011-06-02 02:34:28","2013-10-16 12:53:51",1
+"Stack Level Too Deep in unpack_compressed","2011-05-26 17:06:30","2011-07-13 22:50:44",11
+"git config --get-all not supported","2011-05-06 13:59:12","2011-05-06 13:59:12",0
+"unable to unpack files stored with pack.window 0","2011-04-13 19:10:45","2011-04-13 19:10:45",0
+"Error when trying to get commits in the empty repo","2011-03-20 18:12:27","2011-12-22 06:45:23",1
+"git.rev_list is incorrect for tags","2011-02-25 08:16:19","2011-03-01 02:12:40",2
+"Support git hooks","2011-02-10 02:10:48","2012-10-22 15:51:43",7
+"Index#write_tree won't remove directories","2011-02-01 11:50:57","2011-08-03 05:20:46",4
+"Avoid spurious changes in diff-* commands","2011-01-27 20:54:07","2011-01-27 20:54:07",0
+"Memoize index","2011-01-26 18:40:02","2013-10-15 21:34:24",3
+"NoSuchPathError when cloning remote repo via ssh. Cloning remote also seems a little difficult.","2010-12-10 20:21:15","2010-12-17 20:22:16",1
+"Make Repo#diff return valid blobs","2010-11-28 20:18:54","2013-10-15 21:44:05",2
+"Use appropriate working tree in git commands","2010-11-15 16:36:25","2013-04-06 15:29:53",3
+"grit.commits_since... SystemStackError: stack level too deep","2010-11-04 06:38:41","2012-04-17 15:39:43",9
+"Improved repository check in Repo#initialize","2010-10-30 10:28:36","2010-10-30 10:28:36",0
+"Grit::GitRuby::Repository.rev_list can produce results in the wrong order (parent before child)","2010-10-19 02:52:02","2012-04-21 18:23:42",6
+"test_tag.rb 's ordering of tags disagrees with git(1).","2010-10-12 03:58:43","2010-10-23 22:55:01",4
+"Include Rakefile and tests in gem","2010-10-12 02:59:32","2011-07-10 03:35:34",2
+"Hunks","2010-10-11 04:28:16","2012-02-07 10:32:56",6
+"Git pull and reset","2010-09-13 09:34:48","2012-09-25 22:34:38",5
+"Repo.commit deletes objects that don't exist on the FS","2010-09-04 23:13:22","2010-09-06 15:57:28",1
+"How can I get remote repository with grit?","2010-08-31 05:26:01","2011-08-29 06:59:51",2
+"Invalid tar file on windows","2010-08-25 13:39:29","2011-10-26 17:41:39",4
+"1.9 Encoding Issue","2010-08-14 07:59:00","2013-10-18 09:39:27",9
+"Make remote/HEAD resolve to a commit id","2010-04-27 15:43:24","2010-04-27 15:43:24",0
+"Tree#to_s to give sha1?","2010-03-22 12:32:02","2010-03-22 12:32:02",0
+"Difficult to get tree sha1 from repo/head","2010-03-22 12:30:53","2010-08-04 12:08:23",2
+"init_bare ignores errors from git-init","2010-03-22 12:22:48","2011-07-09 20:04:44",1
+"r.head.commit is 'HEAD' in empty repo","2010-03-22 12:18:42","2010-03-22 12:18:42",0
+"update_ref is not atomic","2010-03-22 12:14:07","2010-03-22 12:14:07",0
+".git/description missing on server","2010-02-14 17:59:54","2011-07-09 19:59:35",1
+"I get nil for blob.name when fetched directly from the Repo","2010-02-10 15:53:46","2010-11-28 20:00:30",3
+"Grit::Git#sh has problem with stdout.read on Passenger","2010-01-05 18:35:07","2011-07-13 17:15:07",5
+"win32 popen3","2009-07-21 04:05:04","2013-01-10 12:21:10",1
+"Need to set --work-tree","2009-06-14 14:10:16","2013-04-06 15:29:16",8
+"Should throw errors","2009-06-14 12:53:00","2012-05-30 08:11:55",4
+"Process.spawn with non-existing command should set $? accordingly.","2013-11-11 16:36:10","2013-11-11 16:36:10",0
+"crash report - Thread deadlock in ::lock()!","2013-11-10 12:23:01","2013-11-11 21:59:50",8
+"crash during execution","2013-11-10 12:07:10","2013-11-10 12:45:35",0
+"IO#read without args on a socket should return ASCII-8BIT string","2013-11-09 19:57:15","2013-11-09 19:57:37",0
+"rb_io_get_io missing from C-API","2013-11-09 19:51:55","2013-11-09 19:51:55",0
+"Omniauth undefined method `encoding' on nil:NilClass.","2013-11-05 06:21:04","2013-11-06 14:07:26",19
+"Unable to unpack bootstrap gems during configure","2013-11-03 13:59:06","2013-11-08 12:32:46",3
+"getsockopt with symbol level,optname fails","2013-10-31 22:52:43","2013-10-31 22:53:35",0
+"still missing some socket constants","2013-10-31 22:12:59","2013-10-31 22:12:59",0
+"FD_CLOEXEC should be default for Ruby 2.0 compatibility","2013-10-31 22:03:45","2013-10-31 22:03:45",0
+"BigDecimal is too slow (need benchmark)","2013-10-29 02:21:41","2013-10-30 14:24:27",2
+" Too many open files - creating pipe (Errno::EMFILE)","2013-10-26 10:17:05","2013-10-28 19:25:11",7
+"Some failures when running the mspecs on OpenBSD","2013-10-24 21:39:36","2013-10-30 18:30:28",9
+"Rubinius build options override those provided to gem installs","2013-10-24 21:07:34","2013-10-27 01:35:57",1
+"Unable to rbx -S gem install bundler with rubinius 2.1.1 on OpenBSD","2013-10-24 17:49:11","2013-11-05 20:42:55",11
+"RSpec / Rails: Slow startup/run times.","2013-10-23 17:10:14","2013-11-06 20:10:28",18
+"Global variables with local scope","2013-10-16 02:33:40","2013-10-16 12:20:10",4
+"JSON.dump performance issue","2013-10-15 21:51:49","2013-10-25 18:15:36",2
+"crash report","2013-10-15 14:51:40","2013-10-25 18:15:58",2
+"Abort on running a threaded task","2013-10-13 00:22:37","2013-10-21 06:09:30",2
+"Installing rubinius 2.x.x fails","2013-10-11 16:12:53","2013-10-30 13:35:26",13
+"IO#ensure_open_and_writable might not check writability correctly","2013-10-09 13:49:15","2013-10-27 00:48:57",1
+"Rails server raises exception","2013-10-09 09:43:44","2013-10-25 17:37:04",3
+"Crash when firing up Rails app","2013-10-08 19:27:52","2013-10-25 18:31:00",6
+"Problem destructuring block arguments with unused (_) variables","2013-10-08 18:33:37","2013-10-22 12:40:37",0
+"Crash when using Pry in highly concurrent environment","2013-10-08 05:48:35","2013-10-08 06:53:40",2
+"Crash when very quickly creating 300+ threads","2013-10-08 05:16:27","2013-10-28 22:06:45",2
+"keyword arguments","2013-10-07 12:39:33","2013-11-06 18:00:38",17
+"Encoding related spec failures in Debian chroot","2013-10-07 07:35:38","2013-10-07 08:19:36",2
+"mysql2 related crashes when running specs","2013-10-07 01:03:00","2013-10-28 21:17:38",7
+"UDP sockets fail when sending multiple packets to non-listening port","2013-10-06 23:42:29","2013-10-11 09:11:19",1
+"Intern array literals (%i[a b c]) are not implemented","2013-10-05 09:03:48","2013-10-23 01:06:59",3
+"Add rb_class_real per #2358","2013-10-02 21:02:22","2013-10-24 19:00:35",6
+"Possible Mutex bug","2013-10-01 18:15:42","2013-10-01 18:33:37",1
+"no such file to load -- rubygems/path_support (LoadError)","2013-09-29 16:43:50","2013-10-17 12:21:01",5
+"crash report","2013-09-28 04:37:57","2013-11-06 19:58:54",2
+"LANG unset","2013-09-17 07:52:23","2013-09-28 13:27:57",8
+"assignment-in-if statement inconsistency","2013-09-16 13:43:55","2013-09-18 12:53:10",6
+"TopLevel and Object.const_set should automatically set Module#name of anonymous modules","2013-09-13 23:20:57","2013-09-18 12:15:14",6
+"avdi/naught test suite failing from Module#const_set","2013-09-13 18:42:23","2013-09-13 23:45:43",2
+"Proc#block inconsistency","2013-09-12 14:09:36","2013-09-12 17:23:51",6
+"Lambda literal syntax with arguments and whitespace","2013-09-12 05:32:08","2013-10-14 03:37:22",3
+"do-block argument parsing inconsistency","2013-08-26 17:37:44","2013-09-21 01:03:11",1
+"String delete/tr slowish compared to MRI","2013-08-02 10:30:50","2013-08-03 02:24:49",2
+"getaddrinfo causing crash under sidekiq","2013-07-29 14:24:27","2013-08-12 19:16:37",2
+"Deployable engine version doesn't match local version, can't bundle","2013-07-26 23:47:30","2013-10-10 04:06:34",28
+"Dir['**/**/**'] raises ""Coercion error: nil.to_str => String failed"", ""0","2013-07-21 10:03:08","2013-08-03 13:08:49","open"
+"JIT problem","2013-07-19 15:22:12","2013-10-09 07:07:15",3
+"Nokogiri test suite crashes","2013-07-16 10:08:24","2013-11-07 21:29:30",3
+"Strange transient failures with Racc","2013-07-11 14:33:15","2013-09-19 21:50:42",2
+"Faster Primality Testing and Factorization Methods for Ruby","2013-07-09 19:16:16","2013-08-28 16:13:49",6
+"Make ObjectSpace.each_object(Class|Module) faster","2013-06-19 13:52:58","2013-09-25 21:02:03",0
+"Strip omit-frame-pointer flag","2013-06-09 16:48:29","2013-08-27 15:53:17",4
+"Running rake a second time the same failure should show up","2013-06-09 11:59:22","2013-09-20 10:56:23",5
+"sendmesg (blocking) of class BasicSocket crashes the thread of the thread pool","2013-05-26 16:17:29","2013-06-12 09:03:43",1
+"rb_class_real() missing from C API","2013-05-24 21:38:04","2013-10-23 22:24:47",4
+"Strange typing behaviour using -n option","2013-05-07 08:08:07","2013-09-25 21:14:07",2
+"Building Melbourne for Rubinius, fails on armv7l","2013-05-04 08:37:06","2013-10-12 21:10:42",11
+"Bunny master tests fail on Rubinius","2013-05-02 10:57:29","2013-05-03 11:54:36",14
+"Issue with failing DNS lookups","2013-04-21 15:58:10","2013-10-16 14:07:37",3
+"Different behavior for UnboundMethod than in MRI 1.9","2013-04-18 10:06:30","2013-11-06 21:10:53",6
+"[rails] (ArgumentError) ""comparison of #<Enumerable::SortedElement:0xcf8ec..failed (6)","2013-03-28 06:43:25","2013-03-28 07:05:44",2
+"Date._parse has different arity than 1.9.3","2013-03-27 00:07:59","2013-10-03 21:24:46",2
+"Benchmarking bm_loop_whileloop.rb failed on i386 with Error::EDOM","2013-03-20 23:13:52","2013-03-26 16:29:26",1
+"Support accessing Fiber-locals and backtraces for a Fiber","2013-03-13 00:42:05","2013-06-20 22:32:06",12
+"Hover state on long titles on blog looks busted","2013-03-01 19:04:46","2013-03-01 19:04:46",0
+"IO performance","2013-02-18 19:25:05","2013-10-11 21:19:39",7
+"FFI-Inline gem fails rspec","2013-02-13 04:41:55","2013-02-13 04:41:55",0
+"Cannot attach LLVM via FFI","2013-01-11 01:28:47","2013-01-11 13:07:04",0
+"Ensure the tests for these FFI projects pass on Rubinius","2013-01-10 05:09:04","2013-07-29 09:25:42",11
+"Crash after Guard test run","2012-12-19 23:18:26","2013-07-15 09:35:50",13
+"Possible Regexp issue with Oniguruma in 1.8 language mode","2012-12-07 22:47:12","2012-12-08 02:28:43",1
+" IO::InternalBuffer#fill_from crash when tab completing in ""xiki"" gem console","2012-12-05 21:17:02","2013-03-31 23:31:48",3
+"Extend FFI::Platform::POSIX with faster native IO methods","2012-12-05 08:17:08","2012-12-05 08:17:08",0
+"Cleanup Array and add Reflector","2012-12-05 00:04:41","2013-02-05 19:16:18",2
+"eventmachine fork test failure with rubinius","2012-11-20 23:26:20","2012-11-20 23:29:07",1
+"Scoping on $_ var is wrong","2012-11-18 03:32:08","2013-10-16 07:42:46",0
+"Ensure the tests for these C-exts pass on Rubinius","2012-11-12 18:32:22","2013-05-29 06:44:40",54
+"Rails usage of jit_stub primitives","2012-11-06 14:43:43","2012-11-07 17:42:12",1
+"Group permissions","2012-10-31 14:01:19","2012-11-25 17:08:58",3
+"next inside of an ensure block crashes compiler","2012-10-04 11:09:51","2013-10-28 22:54:37",3
+"Missing concurrency primitives","2012-08-17 17:19:21","2013-06-25 19:34:18",8
+"Pure Rubinius C++ API","2012-08-08 13:59:50","2012-08-09 07:09:06",6
+"Trailing hash support in IO.popen","2012-05-20 15:14:37","2012-07-31 22:50:57",2
+"Rubinius::EncodingClass::Encoding::CompatibilityError","2012-04-01 07:03:09","2013-07-15 09:59:19",15
+"In irb, variable is not created if it's defined in code that never runs","2012-02-06 10:24:20","2013-07-24 08:46:21",8
+"#readlines significantly slower than MRI","2012-01-03 05:25:17","2013-10-28 22:42:15",4
+"Embed API","2011-08-05 22:53:02","2012-04-24 19:13:07",13
+"Static and shared libraries for rubinius","2011-06-23 15:44:40","2012-03-28 22:20:37",18
+"CSV is much slower than MRI","2011-06-08 17:09:21","2013-10-28 22:34:45",19
+"much slower Nokogiri iteration","2011-06-06 13:43:35","2012-12-10 19:50:26",6
+"Debugger ""next"" doesn't catch exception rescue's sometimes","2010-12-26 17:08:47","2012-11-11 05:27:03",3
+"Be able to get/set the return value of a method at a ""safe"" location such as a RET instruction.","2010-11-20 23:28:44","2011-03-03 09:42:53",0
+"Lifecycle conditions are disabled on restart","2013-11-01 15:04:38","2013-11-04 15:19:41",1
+"Create Root_CA_Resistrant_License","2013-10-30 05:44:46","2013-10-30 05:44:46",0
+"unicorn_rails start command exited with non-zero code = 10","2013-10-28 07:56:04","2013-10-28 07:56:04",0
+"statsd_contact","2013-08-16 12:58:45","2013-08-17 03:15:37",3
+"[fix #129] Fix register/de-register bug when process is restarted out-of-band.","2013-08-06 20:59:52","2013-09-18 20:42:08",3
+"Explicitly exit from forked process to force file descriptors to be flushed","2013-08-01 00:05:58","2013-08-06 01:54:53",0
+"Specify syslog server for remote logging","2013-07-04 11:32:41","2013-07-05 11:01:32",2
+"Email notifications are missing information.","2013-05-21 06:06:48","2013-06-12 19:48:29",1
+"Prevent from starts two processes","2013-04-18 10:07:56","2013-06-04 10:04:42",5
+"Added support for IRC notifications","2013-04-11 13:49:53","2013-06-03 18:19:09",1
+"god doesn't seem to properly de-register process_exit monitoring","2013-03-25 02:38:21","2013-08-06 21:03:09",3
+"Duplicate processes starting","2013-03-22 23:21:33","2013-08-01 00:05:58",1
+"clean_pid_file behavior seems too naive","2013-03-16 03:39:15","2013-03-16 03:40:47",1
+"God and Ruby 2.0.0","2013-02-28 21:06:46","2013-11-10 19:39:13",3
+"WARN: technical_worker start command exited with non-zero code = 1","2013-02-01 17:25:44","2013-06-14 13:22:48",1
+"Support for additional groups and basic expectations in sockets","2013-01-29 22:08:03","2013-01-30 01:04:03",1
+"god thinks its really THE GOD and kills non-monitored process mongod at times","2012-12-11 02:44:15","2012-12-11 02:45:00",0
+"Small change to campfire contact to allow the use of a proxy to get to outside world","2012-12-05 19:46:07","2012-12-05 19:46:07",0
+"something is wrong on the website?","2012-12-03 04:00:29","2012-12-03 04:00:29",0
+"God::EventHandler.start will not called unless initial config file","2012-11-09 12:24:11","2012-11-09 12:25:25",0
+"Not stop and restart Unicorn","2012-11-08 09:48:55","2012-11-08 09:51:26",0
+"Enable multiple gods on one system, run by non-root users.","2012-10-21 21:11:51","2013-10-09 15:18:38",3
+"God gets stuck in ""start"" state and never restarts process","2012-10-17 18:14:30","2013-06-12 18:42:00",1
+"w.keepalive(:socket_responding => ""tcp:12345"") ignored?","2012-10-17 17:30:17","2012-10-17 17:30:17",0
+"Process Dependencies?","2012-10-17 13:15:55","2012-10-17 13:15:55",0
+"Adds an upstart init script","2012-10-03 09:15:30","2012-10-03 09:15:30",0
+"Watch#keepalive insists on using EventHandler when it is not operational","2012-09-12 14:34:44","2012-09-12 14:34:44",0
+"God reports incorrect up status when it fails to fork","2012-09-07 17:12:39","2013-04-25 21:38:51",1
+"Debugging custom conditions is incredibly hard","2012-08-29 15:12:04","2012-08-29 15:12:04",0
+"Would like to add a shell return conditional which would be nice","2012-08-07 08:22:27","2012-08-07 08:22:27",0
+"Manually changing working directory causes god to lose track of PID","2012-08-01 02:32:13","2012-08-01 02:34:35",0
+"When caught USR1,  reopen log file if defined.","2012-07-25 08:21:27","2012-07-25 08:21:27",0
+"Multiple groups support","2012-07-20 09:23:04","2012-07-20 09:23:15",0
+"Missing event system in Ubuntu linux?","2012-05-30 04:49:53","2012-08-27 18:03:23",6
+"Your core language patches break ActiveSupport","2012-05-02 05:59:48","2012-09-18 19:34:19",4
+"Suggestion: Rename `stop` command to `smite`","2012-04-10 20:27:12","2012-10-19 13:15:05",4
+"Can not stop after one ""stop start"" cycle ","2012-03-31 11:25:26","2013-03-26 23:52:03",5
+"Conditions for child processes","2012-03-15 22:58:02","2012-10-10 01:11:20",2
+"Missing proc_exit event","2012-03-05 16:44:16","2013-04-24 07:47:10",1
+"Corrected Typo in god.asciidoc L#587","2012-02-07 15:55:11","2012-02-07 15:55:11",0
+"Documentation wrong for email notifications per smtp","2012-01-27 14:50:02","2012-01-27 14:50:02",0
+"Duplicate PIDs in .god/pids","2012-01-19 20:07:33","2012-01-19 20:07:33",0
+"Segmentation fault with Ruby Enterprise Edition 2011.12","2012-01-18 08:40:57","2013-03-08 19:33:24",26
+"SSL support for SMTP notifications","2012-01-16 14:56:58","2012-01-21 21:33:36",1
+"Added Twilio Contact","2012-01-13 01:10:06","2012-08-19 19:02:40",13
+"segfault with Ruby 1.9.3-p0 and Ubuntu 10.04","2011-11-13 05:11:17","2012-01-10 11:33:47",2
+"Unhandled exception (StandardError): No buffer space available","2011-09-20 18:19:21","2012-09-05 14:40:16",7
+"sugar.rb causes 5.kilobytes and 5.bytes to return the same value","2011-08-08 06:18:45","2012-09-18 19:34:14",15
+"Stuck on init","2011-08-06 04:53:11","2012-10-17 19:12:48",5
+"God appears to be leaving old god processes around indefinitely","2011-06-22 18:00:28","2012-05-30 16:37:48",8
+"Beefed up Complex test method","2011-06-19 19:41:55","2011-06-22 21:41:24",2
+"documentation problem for server_auth email configuration option","2010-12-23 23:14:19","2012-11-06 18:35:09",2
+"Including child processes in CPU/memory usage","2010-11-11 00:00:36","2013-08-22 21:28:49",4
+"God occasionally does not realise that a process has died and reports 0kb memory usage in log","2010-10-27 16:41:03","2010-10-27 16:41:03",0
+"Setting working directory not working with Ruby 1.9.2 ?","2010-10-26 01:09:20","2010-10-27 08:14:39",4
+"Increment/decrement processes","2010-09-30 19:27:35","2012-04-18 23:10:32",2
+"disk_usage doesn't work (Ubuntu 10.4)","2010-07-23 10:30:37","2010-07-23 10:30:37",0
+"log feature undocumented","2010-03-23 21:00:22","2010-04-04 02:19:53",1
+"God notifications don't work properly using TLS and gmail hosted domains","2010-02-23 19:24:49","2010-02-23 19:24:49",0
+"Race condition makes ""god terminate"" intermittently fail","2010-01-06 03:41:24","2010-10-25 14:39:01",3
+"Multiple Processes/PIDs per Watch","2009-12-19 17:32:25","2010-01-14 03:47:08",5
+"Ruby 1.9.1 and god","2009-11-27 06:25:19","2011-02-21 15:15:19",19
+"""god check"" failure","2009-10-14 15:46:16","2013-04-27 09:31:01",5
+"God segfaults on new RE with thread patches","2009-10-01 07:30:39","2009-12-19 21:16:07",2
+"Twitter gem has changed","2009-06-04 22:54:47","2013-08-16 01:09:58",1
+"The server is not available (or you do not have permissions to access it)","2009-05-14 18:51:54","2013-11-08 20:56:59",8
+"Password validation on all attribute updates","2011-11-09 22:04:11","2011-11-09 22:04:11",0
+"consuming plugin's authentication data in other languages (java)","2011-08-18 13:13:23","2011-08-18 13:13:23",0
+"Cleaned up a bunch of markdown formatting in README","2011-08-18 02:39:57","2011-08-18 02:39:58",0
+"Rake deprecation warning for Rails 2.3.10","2011-04-19 17:47:33","2011-12-04 02:58:35",1
+"Make the README actually markdown","2011-03-05 19:55:37","2011-03-05 19:56:07",0
+"Not on rubygems.org","2011-02-07 09:26:17","2011-02-07 09:34:34",0
+"Removed duplicate recently_activated? action","2010-12-24 15:14:09","2010-12-24 15:15:38",0
+"Could not find generator authenticated","2010-12-06 08:42:13","2010-12-10 05:22:29",1
+"Date formatting problem","2010-12-04 10:31:13","2010-12-04 10:31:13",0
+"Support Rails' standard plugin installation mechanism.","2010-10-31 02:21:58","2010-10-31 02:21:58",0
+"logout does not invalidate sessions when using ActiveRecord::SessionStore","2010-10-11 18:05:43","2010-10-11 18:05:43",0
+"Support for .cat TLD domains","2010-10-04 16:32:50","2013-03-11 02:56:57",2
+"recently_activated missing question mark (?) in generator","2010-09-08 16:07:00","2010-09-27 13:04:08",0
+"NoMethodError when session kept in cookie is recovered","2010-08-03 10:49:46","2010-09-27 13:04:07",0
+"Validation with Authentication.email_regex fails on some RFC5322-valid addresses","2010-07-22 21:28:45","2010-09-27 13:04:06",1
+"Forceful Migrations","2010-04-21 10:07:48","2010-09-27 13:04:05",1
+"Default redirect for 'SessionsController#create' template is hard coded","2010-03-02 16:03:37","2010-09-27 13:04:05",0
+"password validation in model should override that set in plugin","2010-03-01 10:31:59","2010-09-27 13:04:04",1
+"Incompatible with Rails 3 bundler","2010-02-21 20:04:43","2011-02-14 11:30:56",1
+"display welcome message with username after login","2010-01-28 09:48:39","2010-09-27 13:04:01",1
+"SecurityError","2010-01-16 08:56:58","2010-09-27 13:03:59",2
+"removed installation instructions as submodule","2009-12-09 11:43:18","2010-09-27 13:03:58",0
+"Cucumber issues","2009-12-06 20:16:31","2010-09-27 13:03:57",4
+"Move to Gemcutter?","2009-11-20 17:18:57","2010-09-27 13:03:55",2
+"remember_me will never work?","2009-11-05 16:53:08","2010-09-27 13:03:54",1
+"Master branch broken create user method","2009-08-18 05:07:52","2010-09-27 13:03:52",0
+"missed issue in documentation","2009-07-30 02:33:39","2010-09-27 13:03:51",0
+"database session store","2009-05-13 14:38:13","2011-01-18 12:24:29",1
+"note_failed_signin unescaped string","2009-05-07 14:45:13","2010-09-27 13:03:49",4
+"Error when attempting to install attachment_fu using bundler","2013-04-11 17:02:32","2013-04-11 17:02:32",0
+"Depracation Fix","2013-02-11 12:43:41","2013-02-11 12:43:41",0
+"Please pull fix for rails 1.2.6","2012-11-25 09:55:39","2012-11-25 09:55:39",0
+"test do not run without being inside a rails project","2012-09-24 19:32:39","2012-09-24 19:32:39",0
+"keep aspect ratio on resize option","2012-03-21 01:36:34","2012-03-21 01:36:34",0
+"In my production machine thumbnils arte not getting created","2011-08-31 07:34:54","2011-08-31 07:34:54",0
+"Kernel#returning => Object#tap","2011-07-29 16:47:08","2011-07-29 16:47:08",0
+"TypeError (can't convert nil into Integer): ","2011-03-17 05:06:39","2011-07-05 14:29:49",1
+"Server Setting Missing In Config File","2011-02-18 22:48:39","2011-02-18 22:48:50",0
+"Solved Rails 3.0.3 temp_file size problem. Maybe this needs a more solid fix","2011-01-13 12:44:10","2011-01-13 17:43:23",1
+"Rails3 and attachment_fu","2010-12-06 07:42:54","2011-04-25 08:23:18",1
+"Word 2010 view","2010-12-02 15:10:55","2010-12-02 15:10:55",0
+"Validating image dimensions before save","2010-10-27 08:03:33","2010-10-27 08:03:33",0
+"Core Image Processor causes segmentation faults on OS X 10.6.x - 64bit.","2010-10-07 12:51:16","2010-10-07 12:51:16",0
+"remove ""returning"" to avoid rails 2.3.9 deprecation warnings","2010-09-17 10:44:51","2011-03-22 18:52:45",0
+"attachment_fu + ruby 1.9.1","2010-09-03 13:41:49","2013-07-17 15:50:03",9
+"S3/Cloud Creates wrong public path when using separate thumbnail class","2010-07-30 16:12:03","2011-11-04 05:23:09",1
+"Switching between different machines ","2010-07-24 11:32:07","2010-07-24 16:26:13",1
+"batch import does not create thumbnails and does not take into account MetaModel attachment options","2010-07-07 17:10:47","2011-02-01 11:20:53",0
+"displaying pdf attachment inline, in the view (problem with browsers on Windows) ","2010-06-09 23:43:16","2010-06-10 13:02:00",2
+"Rails 3","2010-06-01 18:08:54","2013-04-22 15:30:34",6
+"bug in ImageScience when it processes .gifs","2010-05-06 23:20:18","2010-05-06 23:22:11",1
+"in Windows, uploading to Amazon S3 and Rackspace Cloud Files fails","2010-04-30 15:04:24","2010-04-30 16:01:30",9
+"Uploaded files end up in wrong place","2010-04-23 20:00:09","2010-04-23 20:00:09",0
+"public_filename does not return relative path","2010-04-02 02:54:08","2010-04-02 15:44:27",1
+"Mongrel_rails prefix","2010-02-14 06:40:24","2010-02-14 06:40:24",0
+"attachement_fu and rails 3.0","2010-02-12 02:30:32","2011-02-18 14:44:32",4
+"No such file to load -- ftools","2010-01-28 14:04:45","2010-02-02 16:52:02",4
+"Datamapper support?","2009-11-25 20:39:56","2009-11-25 23:28:10",2
+"Size restrictions are not properly applied to separate thumbnail class.","2009-11-01 02:35:07","2009-11-01 02:35:07",0
+"GD2 problem","2009-08-17 16:12:38","2009-08-17 16:12:38",0
+"Tempfiles in tmp/attachment_fu are not proactively deleted","2009-08-13 05:17:05","2010-02-22 00:04:24",1
+"Files not properly ""required"", ""0","2009-07-22 17:46:11","2009-07-22 17:46:11","open"
+"validates_as_attachment does not allow for custom error messages","2009-06-25 11:31:29","2011-03-05 21:44:43",1
+"Fix for issue #1","2011-02-10 07:53:46","2011-02-10 07:53:46",0
+"log directory should be created if needed","2009-10-28 15:44:37","2009-10-28 15:44:37",0
+"how to resolve this error?","2013-10-28 07:25:54","2013-10-29 14:29:41",1
+"chroot support for thin","2013-10-08 00:43:37","2013-10-31 15:02:33",3
+"Add Upstart support to thin init script","2013-10-07 12:42:11","2013-10-07 12:42:11",0
+"Why after 'thin install' incorrect thin path?","2013-09-22 20:42:59","2013-09-22 20:43:07",0
+"Empty response by giving body in Array whose total length is as large as 2GB","2013-09-10 02:49:44","2013-09-12 06:48:50",3
+"thin install - systemD support","2013-07-04 17:44:13","2013-09-09 21:58:40",3
+"Thin does not correctly handle output to a pipe","2013-07-03 23:54:28","2013-07-03 23:54:28",0
+"Bundle Exec Thin Start Dies with Spaces in File Path on Windows","2013-06-17 18:37:36","2013-06-17 18:37:36",0
+"Thin not using group permisions correctly","2013-04-30 23:39:41","2013-04-30 23:40:13",0
+"Fix condition for String#encode!","2013-04-30 20:09:07","2013-05-02 18:21:38",3
+"Fixes problem with connections requests keep-alive and thin","2013-04-25 12:52:26","2013-06-28 15:19:41",3
+"Limit of only 6 concurrent connections open per client?","2013-04-06 20:24:50","2013-04-08 18:35:42",7
+"Thin 2","2013-03-14 21:46:24","2013-08-13 03:51:02",2
+"Too many open files when running with SSL enabled.","2013-02-18 16:54:22","2013-02-21 15:56:59",7
+"Non-standard Keep-alive behavior","2012-12-14 07:23:25","2012-12-14 07:23:25",0
+"Thin 1.5 can't run as another user/group","2012-10-28 02:19:40","2012-11-19 22:31:38",3
+"--all should ignore files not matching *.yml","2012-10-18 15:40:16","2012-10-18 15:40:16",0
+"Make log and pid files group writable","2012-10-01 14:59:40","2012-10-01 14:59:40",0
+"HUP does not function properly unless thin is running as a daemon","2012-08-27 09:09:24","2013-07-06 19:27:22",3
+"Non-Rack embeddable http-server connection","2012-08-23 08:21:42","2012-08-23 20:24:17",2
+"Failing test: it 'should force kill process in pid file'","2012-07-03 15:04:49","2012-07-03 15:15:24",2
+"Create a ""status"" command","2012-03-28 21:20:35","2012-11-28 16:58:09",1
+"Thin returns 0 even when not started all instances","2012-02-29 16:11:32","2012-09-04 06:48:34",1
+"Explicit or implicit support for `bundle exec`","2012-02-04 01:21:44","2012-02-12 21:27:27",2
+"License","2012-02-03 12:36:26","2012-04-04 18:05:55",2
+"about rack protocol version ","2011-12-20 07:54:17","2011-12-20 07:54:17",0
+"[patch] commint 55c024c2 breaks unittests","2011-11-29 14:49:12","2011-11-29 15:15:17",1
+"Starting w/ sudo on ports >1024 fails to bind w/ -u option.","2011-11-29 07:04:48","2011-11-30 06:05:14",1
+"Unable to schedule jobs reliably in rails initializer","2011-06-17 15:32:52","2011-06-20 16:48:02",1
+"Thin is not supporting pipelining?","2011-03-10 10:15:23","2013-04-25 11:03:20",10
+"Empty pid file wound't let thin run","2011-01-29 13:43:53","2011-01-29 13:44:22",0
+"Thin does not handle duplicate Header names.","2011-01-24 22:16:34","2013-01-25 18:45:18",6
+"Thin not returning an exit code of 1 when a rails app fails to start up as a daemon.","2010-09-10 21:24:02","2010-09-10 21:24:02",0
+"thin limits which response headers may be repeated","2010-09-10 16:24:41","2010-09-10 16:35:13",0
+"Change to rack from rails renders prefix useless","2010-06-07 13:06:44","2010-06-07 13:06:44",0
+"problem with send_data","2010-05-14 21:17:48","2010-05-17 14:18:23",2
+"/etc/init.d/thin stop always fails","2010-02-12 18:03:16","2010-04-15 00:50:44",5
+"When using request absolute URI Thin leaves PATH_INFO empty","2009-12-14 12:03:17","2013-02-11 20:10:04",6
+"Fix Kernel::returning deprecation messages","2013-10-07 19:21:15","2013-10-07 19:21:15",0
+"Minor (but important!) readme fix","2011-09-28 09:16:23","2011-09-28 09:16:23",0
+"Changes to suppress Rails3 warning","2011-02-07 10:18:12","2011-02-07 10:18:12",0
+"Don't set flash for Ajax requests","2010-09-30 22:23:08","2010-09-30 22:23:08",0
+"uninitialized constant ResourceController","2010-04-08 11:07:00","2010-05-11 17:29:17",4
+"R_C and MimeType::register_alias aliased mime types?","2010-03-15 10:31:04","2010-03-15 11:10:01",1
+"Feature Request: Custom actions","2010-02-07 19:23:04","2010-09-30 22:14:39",1
+"application_controller / application dependency check issue","2009-10-02 15:11:31","2010-05-12 14:35:59",1
+"rescue_from not working","2009-08-22 03:31:17","2010-04-26 16:11:08",0
+"allow scoping finds and creates by non parent","2009-08-17 06:26:05","2009-08-17 23:25:19",0
+"Conflict with tiny_mce plugin","2009-05-18 22:07:30","2010-10-20 13:55:46",1
+"Use better default validation msg for enum","2009-06-02 07:45:51","2009-06-26 19:41:09",1
+"How can i refresh cache right now?","2012-06-02 14:20:25","2012-06-02 14:20:25",0
+"cache_fu's config is conflict to config in rails3","2010-04-20 01:19:26","2010-09-22 20:45:25",1
+"Tests don't pass","2010-02-24 02:44:54","2010-02-24 02:44:54",0
+"tests fail/ Rails site fails","2009-11-10 14:31:50","2009-11-11 21:53:51",1
+"avoid overriding the ""cache_key"" method for ActiveRecord::Base children","2009-10-02 08:58:06","2009-10-02 09:13:25",1
+"Action caching broken","2009-09-11 23:00:14","2010-10-19 04:57:03",0
+"Backtick problematic (simple fix)","2013-11-08 03:03:22","2013-11-08 03:14:43",0
+"Any way to delete a tag?","2013-10-25 23:34:34","2013-10-28 03:48:38",0
+"Maintenance status","2013-10-22 12:34:02","2013-10-22 12:34:02",0
+"added support for --mirror option on clone command","2013-10-19 15:31:09","2013-10-19 15:31:09",0
+"Fix: Git::Base is_remote_branch?","2013-10-19 01:17:45","2013-10-19 01:33:28",1
+"How do I check for a simple diff?","2013-10-13 11:18:41","2013-10-13 11:18:41",0
+"git.tag on specific SHA?","2013-10-10 18:56:13","2013-10-24 22:29:14",1
+"implicit cast breaks RBX ","2013-10-07 23:11:39","2013-10-07 23:11:39",0
+"diff before merge?","2013-10-07 05:45:59","2013-10-07 05:45:59",0
+"Basic Rebase","2013-09-23 18:06:14","2013-09-23 18:06:14",0
+"Added the ability to update bare repos using fetch","2013-09-14 15:35:18","2013-09-14 15:35:18",0
+"Handle commits with empty lines in the message","2013-09-12 07:07:21","2013-10-22 18:41:39",1
+"Make tests defensive against timezones","2013-09-12 05:53:32","2013-09-12 05:53:32",0
+"Add `cherry` support to Git::Log","2013-09-11 14:39:19","2013-09-11 14:39:19",0
+"Bug on  `def escape(s)` on lib/git/lib.rb","2013-09-05 22:19:54","2013-09-05 22:19:54",0
+"Implement Git::Log#follow","2013-08-31 17:55:36","2013-08-31 17:55:36",0
+"possible memory leak when calling status","2013-08-29 23:49:11","2013-08-31 01:43:54",1
+"`Git.init ""a.git","2013-08-29 02:55:06","2013-09-01 23:34:03"," bare:true` should create ""a.git"" bare repository"""
+"No way to update bare repositories from remote repository","2013-08-21 07:37:04","2013-08-21 17:22:11",2
+"make Lib class work with git submodules","2013-08-16 14:14:51","2013-08-16 14:14:51",0
+"Adding git rebase command.","2013-08-05 20:18:48","2013-08-05 20:18:48",0
+"Pass options through to command.","2013-07-31 08:28:58","2013-10-19 15:31:09",3
+"Handle commits with newlines in the message.","2013-07-03 12:28:43","2013-09-12 07:07:21",3
+"Feature request: Support option `--follow` for logging","2013-06-30 04:33:56","2013-08-31 17:55:36",1
+"Support Submodules","2013-06-14 14:56:53","2013-06-24 14:31:06",2
+"get first commit from git log?","2013-06-05 05:35:18","2013-06-05 05:50:06",0
+"allow for making diff from the current working directory to HEAD","2013-06-01 12:52:49","2013-06-01 12:56:36",0
+"Improve temp path generation","2013-04-29 17:09:31","2013-04-29 17:09:31",0
+"Create ""clone --recursive"" tests (after adding support for submodules)","2013-04-26 20:57:40","2013-08-17 07:37:55",0
+"git.status.push_delivered_in_percent ","2013-04-14 14:43:28","2013-10-21 19:12:56",5
+"Git::Base#in_remote_branch? and Git::Base#is_local_branch? have conflicts for branches sharing the name","2013-04-11 21:56:35","2013-08-21 17:25:24",0
+"Additions for serving versioned files from rails/Automatically untrack deleted files.","2013-03-12 18:39:15","2013-03-12 18:39:15",0
+"Showing commits from all branches on a given repo","2013-02-07 20:10:29","2013-02-07 20:10:29",0
+"fix utf8 issue + remove deprecated has_rdoc","2012-11-28 19:03:29","2013-10-05 22:21:57",2
+"Add git show <ref>:<filename>","2012-11-20 20:09:22","2012-11-20 20:09:22",0
+"status ignores dotfiles","2012-07-14 16:31:11","2013-08-21 17:55:00",2
+"Reset improvements","2012-06-25 15:10:40","2012-06-25 15:10:40",0
+"Add merge_base (and merge_tree in Lib)","2012-06-02 14:47:57","2012-06-27 21:11:34",0
+"Update escaping for file names to handle files with single quotes","2012-02-09 00:46:10","2013-10-22 12:32:22",1
+"Added options to tag method.","2012-02-03 21:53:37","2013-08-21 17:56:15",0
+"Added git ls-remote command to Git::Lib","2011-12-10 02:12:03","2013-08-21 17:56:43",4
+"Multiline commits are not parsed correctly","2011-12-01 03:05:19","2011-12-01 03:05:19",0
+"Crash if log contains foreign characters(?)","2011-10-14 09:27:23","2013-09-09 22:18:11",4
+"Ability to list staged files only","2011-09-28 14:32:52","2011-09-28 14:32:52",0
+"Git.clone does not allow passing in a logger","2011-09-23 15:25:36","2013-10-02 10:14:16",1
+"Support for annotated tags.","2011-09-10 23:12:06","2013-08-21 17:57:54",0
+"diff_parent on the first commit in a repo doesn't degrade gracefully","2011-08-17 07:30:33","2011-08-17 07:30:33",0
+"Support for annotated release tags with Git","2011-07-24 18:08:37","2011-09-10 23:12:54",2
+"ruby-git status and command line git status differ ","2011-05-20 02:16:49","2013-08-14 19:19:43",2
+"Untitled","2011-03-11 17:07:55","2013-10-21 18:55:10",1
+"Added a submodule command.","2011-02-04 03:06:37","2013-04-26 20:58:31",0
+"Untracked files in Status but nothing to commit","2011-01-26 11:15:47","2011-01-26 11:15:47",0
+"Clone no-checkout (-n)","2010-09-22 14:11:51","2010-09-22 14:13:00",0
+"Added git-blame support","2010-09-05 21:14:09","2010-09-07 20:08:31",2
+"status out of sync?","2010-06-07 19:21:35","2010-06-07 19:45:04",1
+"complete ignored files","2010-04-20 10:08:29","2013-09-22 21:51:01",2
+"Please update the readme to indicate that Grit is the one to use","2009-12-26 18:29:10","2011-08-06 20:51:31",2
+"Git log should support the --decorate option","2009-12-20 05:56:32","2009-12-20 05:57:48",0
+"Git::Lib#escape does not work, escapes incorrectly","2009-11-12 19:44:22","2013-10-22 12:32:22",0
+"Objects return wrong SHA after calling 'date' ","2009-07-22 22:08:14","2009-07-22 22:08:41",0
+"Test case failure; with (very rough) proposed fix","2011-02-23 21:16:04","2011-02-23 21:17:59",0
+"fails to parse ""03/10/2013 12:00 AM"", ""0","2013-11-12 02:35:50","2013-11-12 02:35:50","open"
+"If I select a date in now: that is the same day in the parse it gives me the next matching date instead of the same day","2013-11-11 23:15:20","2013-11-11 23:16:04",0
+"Chronic fails to parse 'Jan 1, 12:00 noon'","2013-11-07 19:19:05","2013-11-09 20:43:45",1
+"Hook for language support","2013-10-25 18:35:12","2013-11-02 14:44:04",3
+"next week sunday returning nil","2013-10-23 08:46:27","2013-11-04 18:15:45",9
+"Chronic.parse('string', guess: false).end gives incorrect date-time","2013-10-17 00:04:29","2013-10-17 09:45:59",1
+"Allow weeks to start on monday","2013-09-27 18:08:38","2013-10-08 19:35:25",3
+"Made time_class thread safe","2013-09-19 23:15:32","2013-09-23 17:33:48",6
+"Chronic.parse('first monday of the month at 9am') doesn't work","2013-08-29 15:34:52","2013-09-05 18:00:20",4
+"Control how numbers on their own are treated","2013-08-22 08:05:18","2013-08-22 11:24:40",2
+"Does not parse ""the monday after next"" :o(","2013-08-11 20:40:15","2013-09-21 16:35:17",1
+"Support an option to preserve timezone offset","2013-06-26 21:56:24","2013-06-26 21:57:29",0
+"Setting time zone and thread safety","2013-06-17 12:17:23","2013-09-19 23:15:32",1
+"Changes to Time.zone are not reflected in Chronic parsing","2013-04-04 11:51:06","2013-09-19 23:15:32",2
+"Possible daylight savings time issue for March 10 in AST (Rails)","2013-03-07 02:49:54","2013-10-23 15:35:47",2
+"Getting nil trying to parse 'March 10, 2013 at 12am'","2013-03-03 16:11:04","2013-10-23 15:35:47",2
+"""Last winter"" range returns ending date earlier than start date","2013-01-22 14:31:11","2013-01-28 15:48:58",3
+"Issues Parsing ""Second"" as an Ordinal Number","2012-11-02 21:10:56","2013-01-18 08:49:10",2
+"Daylight Savings not handled properly","2012-10-28 23:42:50","2013-03-23 13:59:51",7
+"Chronic.parse('2000', :guess => false) returns 20:00, not the year 2000","2012-10-17 12:01:50","2013-04-05 00:20:36",5
+"Time zones only work with certain formats","2012-09-28 16:26:32","2013-02-19 19:12:35",3
+"Chronic.parse('next year Jan 1 12:00') return nil","2012-09-17 02:21:03","2012-09-17 02:21:03",0
+"Chronic does not treat PM times past 6 PM correctly","2012-09-12 22:28:16","2012-09-17 01:36:20",1
+":context => :past ignored?","2012-08-21 16:07:07","2012-08-21 16:07:07",0
+"Add localization support for chronic","2012-08-01 19:56:21","2013-11-01 22:57:16",19
+"Chronic.parse('1200') returns 12am, not 12pm","2012-07-11 19:04:07","2013-08-22 14:41:39",2
+":guess => false includes next day","2012-03-13 00:22:07","2013-10-17 00:16:04",0
+"New context: this_year","2012-02-18 06:47:45","2012-02-19 14:04:13",1
+"""9 AM tomorrow"" does not parse","2012-02-16 13:04:51","2012-03-07 19:31:27",1
+"Different results when parsing '1st' and 'first'","2012-02-15 04:10:38","2012-02-15 10:24:47",6
+"Summer 2003 returns as 20:03 on Jan 21st","2012-01-24 18:04:15","2012-01-24 18:06:30",1
+":context => :past mostly ignored when parsing time (6am, 2:00)","2011-08-08 16:23:21","2013-04-15 17:08:45",15
+"last day of the month","2010-12-03 03:46:25","2013-03-26 00:11:31",7
+"request: teach chronic to parse ""last quarter","2010-11-30 01:05:48","2013-05-14 06:28:19","this quarter"
+"doc","2013-07-14 06:24:08","2013-07-14 06:24:08",0
+"blakerry 9300","2013-04-26 08:18:15","2013-04-26 08:18:15",0
+"work","2011-11-01 13:22:05","2011-11-01 13:22:05",0
+"Changed link to al3x's fork","2011-01-31 20:56:36","2011-01-31 20:56:36",0
+"Sinatra 1.0 in file templates method deprecation","2010-11-05 10:38:22","2010-11-05 10:38:22",0
+"It does not start with the following versions:","2010-08-25 19:47:21","2010-11-05 10:41:04",4
+"Plugins need upgrade","2009-10-14 19:28:28","2010-03-06 08:25:27",1
+"Sessions Donot Clear","2009-09-12 10:01:13","2010-03-06 08:24:33",2
+"Create Partial from Selection not working","2013-04-05 14:38:34","2013-04-05 16:34:07",1
+"Failure running ""Quick Migration"", ""1","2013-02-27 00:03:07","2013-10-13 00:27:07","open"
+"Install with Git","2013-02-10 04:28:55","2013-02-10 09:24:41",1
+"Update Snippets/image_tag.tmSnippet","2012-10-07 13:50:32","2012-10-07 13:50:32",0
+"New snippets and refactoring","2012-09-27 18:52:24","2013-08-28 19:15:29",0
+"New snippet for attr_accessible","2012-02-23 17:05:32","2012-09-27 18:53:33",0
+"Added json to Create resources Controller","2012-01-31 15:03:38","2012-01-31 15:03:38",0
+"Add Go To Alternate File for haml with gem 'haml' in Gemfile","2011-12-21 01:22:35","2011-12-21 01:22:35",0
+"Rails 3 refactor","2011-10-03 12:43:32","2011-10-03 12:43:32",0
+"Update Create Resources Controller Class snippet to use JSON instead of XML","2011-10-01 10:51:57","2011-10-01 10:51:57",0
+"Fix migration snippets for Rails 3.1 so they can find def down as well as def self.down","2011-09-21 11:12:27","2011-09-21 11:12:27",0
+"Add support for folding if statements in ERB","2011-06-10 07:13:46","2011-06-10 07:13:46",0
+"Cucumber syntax warning","2011-06-02 12:10:37","2011-06-02 12:10:37",0
+"Added elsif ERB snippet","2011-05-25 05:56:27","2011-05-25 05:56:27",0
+"add support for slim","2011-03-30 00:46:07","2011-03-30 00:46:07",0
+"path error when using Show DB Schema for Current Class","2011-03-22 13:44:34","2011-03-22 13:44:34",0
+"Class definition with :: doesn't seem to be honored with code coloring","2011-03-22 01:58:08","2011-03-22 01:58:08",0
+"rails 3 generators from textmate","2011-03-22 01:20:58","2011-06-15 02:37:52",1
+"erb indentation not quite right?","2011-02-07 22:59:31","2011-02-07 22:59:31",0
+"Editing js.erb files in Rails 3","2010-12-17 03:00:53","2010-12-17 03:00:53",0
+"Show error when rails path is not found","2010-12-08 07:37:33","2011-07-26 05:11:17",1
+"opt-cmd-down does not see js.erb view files","2010-11-12 23:46:55","2010-11-12 23:46:55",0
+"Untitled","2010-10-26 06:12:41","2010-10-26 06:12:41",0
+"generate {scaffold, ...} command tries to run script/generate in Rails 3","2010-10-20 10:27:25","2011-06-15 02:43:40",3
+"Bundle Help displaying keystrokes incorrectly","2010-10-01 14:00:34","2011-05-27 16:23:09",2
+"insert_add_column_or_create_table.rb:9:in `unprepend': private method `split' called for #<Array:0x1011e9d60> (NoMethodError)","2010-09-27 14:59:46","2011-03-22 14:59:22",4
+"show db schema doesnt work with ruby 1.9","2010-02-25 22:27:58","2011-08-11 16:16:58",6
+"Running test from TextMate in a Rails 3 project","2010-02-11 18:44:42","2010-05-03 14:04:44",1
+"Assertions","2010-01-30 17:02:32","2010-08-13 15:08:10",3
+"How will we support Rails 2 and Rails 3 in the Commands and Snippets?","2010-01-26 22:43:52","2011-04-18 04:29:19",6
+"Autocomplete Foreign Key Fixture Reference runtime error","2010-01-05 13:27:20","2010-03-09 14:57:12",3
+"'Remote' is added to the global namespace","2011-01-10 21:41:52","2011-01-10 21:41:52",0
+"$.fn.delegate overwrites the default jquery method","2010-10-20 15:58:06","2012-01-05 21:07:34",1
+"Adding support for m1.medium instances.","2013-11-06 11:40:55","2013-11-06 11:40:55",0
+"add license information to the gemspec","2013-01-27 19:53:53","2013-01-27 19:53:53",0
+"support for m1.medium instances and higher versions of rake (>= 0.8.7)","2012-08-12 20:44:04","2012-08-23 13:20:13",2
+"Odagiri 20120608","2012-06-08 06:29:30","2012-06-08 06:56:00",0
+"Bug in describe_launch_configurations when passed a :launch_configuration_names parameter","2012-03-26 22:35:08","2012-03-26 22:35:08",0
+"Adding m1.medium to the list of valid instance types.","2012-03-23 23:41:06","2012-11-02 12:12:01",1
+":availability_zone for run_instances does not work","2012-02-15 21:45:32","2012-02-15 21:45:32",0
+"Support filtering in describe instances","2012-02-10 15:03:28","2012-02-10 15:03:28",0
+"cloudwatch errors are not recognised by aws_error?","2012-02-08 12:49:22","2012-02-11 09:13:26",1
+"Change of top-level namespace to fix conflict with official Amazon aws-sdk","2012-01-26 11:12:59","2012-01-26 11:12:59",0
+"Rdoc issue:  :instance_type described as :type in request spot instance options hash.","2012-01-03 00:01:44","2012-01-03 00:01:44",0
+"Update EC2 API to version 2011-11-01 and add support for new DescribeInstanceStatus API call","2011-12-02 15:36:47","2011-12-02 15:36:47",0
+"add new cc2.8xlarge instance","2011-11-15 16:14:06","2011-11-15 16:14:06",0
+"Hi! I cleaned up your code for you!","2011-10-29 09:29:13","2011-10-29 09:29:13",0
+"ELB Error Causing Crash","2011-09-06 04:03:07","2011-09-06 04:03:30",0
+"Added support for CloudWatch's PutMetricData","2011-08-11 20:50:32","2011-08-11 22:45:10",1
+"warning: method redefined; discarding old confirm_product_instance","2011-08-08 17:23:11","2011-08-08 17:23:11",0
+"Fix relative-path inclusion to work with Ruby 1.9.2 and later.","2011-08-07 00:16:06","2011-08-07 00:16:06",0
+"Added PutMetricData to Cloudwatch portion","2011-08-03 18:20:53","2011-08-03 18:25:26",1
+"Exception in pathlist when 'arr' is nil.","2011-07-13 01:41:34","2011-07-13 01:41:34",0
+"Filter snapshots and volumes","2011-06-20 15:37:52","2011-06-20 15:37:52",0
+"Need to update API version for RDS from 2009-10-16","2011-06-11 22:57:17","2011-06-11 22:57:17",0
+"add cg1.4xlarge instance type to spot price history","2011-06-07 22:07:03","2011-06-07 22:07:03",0
+"Add filters to snapshots","2011-04-27 21:37:32","2011-04-27 21:37:32",0
+"awshell and example ruby file giving error","2011-03-04 06:35:26","2011-03-04 06:35:26",0
+"Fix authorize security group ingress","2011-02-08 05:21:40","2011-02-08 05:21:40",0
+"describe_images now supports filtering","2011-01-12 10:23:46","2011-01-12 10:23:46",0
+"RDS create_db_instance :db_parameter_group option is coded incorrectly","2010-12-24 00:34:23","2010-12-24 16:42:20",0
+"Managing Director","2013-05-30 23:46:39","2013-05-30 23:46:39",0
+"Deprecation warning in Rails ~> 2.3.9","2011-04-03 19:00:47","2011-04-03 19:00:47",0
+"correctly detect whether svn braid is up-to-date","2012-04-20 05:11:40","2012-04-20 05:11:40",0
+"Move All Code to Lib","2012-04-18 14:41:56","2012-04-18 14:41:56",0
+"More Informative CannotGuessType Message","2012-04-18 14:34:47","2012-04-18 14:34:47",0
+"Braid: Error: local changes are present","2012-04-17 18:14:29","2012-10-30 10:24:21",1
+"fork() function is unimplemented on this machine","2012-01-11 17:33:24","2013-02-04 20:45:43",4
+"Post update git hook?","2011-09-07 04:11:48","2011-09-07 04:11:48",0
+"braid swallows git fetch errors, even in verbose mode","2011-02-02 17:26:52","2011-03-09 23:42:54",1
+"undefined method `enable' for #<Capistrano::Configuration::Namespaces::Namespace:0x007f947588a8b8> (NoMethodError)","2013-03-18 05:17:39","2013-03-18 05:24:02",1
+"Database dump using wrong role","2012-11-06 03:52:13","2012-11-29 18:46:17",2
+"bundler will ask for user password from capistrano","2010-10-21 21:34:13","2012-11-29 18:46:16",1
+"EYLogger and notify start/stop are not included in the deploy:cold and deploy:rollback tasks","2010-01-17 07:25:54","2012-11-29 18:46:16",1
+"EYLogger#post_process fails if called in the top-level namespace","2010-01-17 07:25:04","2012-11-29 18:46:16",1
+"Misleading comments and use of sudo method in mongrel.rb recipes","2009-12-21 20:30:54","2012-11-29 18:46:16",3
+"Checkdoc warnings","2013-06-03 17:05:26","2013-06-03 17:05:26",0
+"add ipv6 method to Forgery::Internet","2013-04-15 17:22:31","2013-04-15 17:22:31",0
+"avoiding white spaces in domain_name and email_address","2013-04-09 10:09:40","2013-04-09 18:50:44",1
+"Proper name for Polish Zloty","2013-04-03 10:43:31","2013-04-03 10:43:31",0
+"Here are some generators for Russian Taxation system","2013-03-20 15:37:26","2013-03-20 15:37:26",0
+"Bump release and publish new gem (0.5.1?)","2013-03-18 04:50:44","2013-03-18 04:50:44",0
+"Forgery::Address.phone returns invalid phone numbers","2012-12-01 22:17:14","2012-12-20 08:19:22",2
+"Forgery(:internet).email_address - whitespace in email address","2012-07-24 23:30:38","2012-07-24 23:30:38",0
+"Simplify the design and consolidate","2012-05-15 08:30:29","2012-07-01 07:56:34",2
+"Add UserAgents to dictionaries and Internet forgery","2012-04-17 14:32:34","2012-04-17 14:32:34",0
+"Reorganization Of Categories","2011-07-21 12:07:13","2011-07-30 21:08:52",7
+"Separate Dictionary sets by language","2010-07-22 05:59:42","2011-07-21 18:51:09",2
+"Extend formats to allow alpha character","2009-04-17 00:04:24","2009-10-15 10:24:49",0
+"The loading of 'EC2' failed","2009-10-09 06:19:24","2010-01-12 04:47:34",4
+"PG::UndefinedTable: ERROR:  relation ""users"" does not exist","2013-11-10 23:14:43","2013-11-10 23:14:43",0
+"updated for rails4","2013-10-29 18:01:12","2013-10-29 18:01:12",0
+"FIX: doc. View issue #143","2013-10-28 20:27:54","2013-10-28 20:27:54",0
+"Can't call revision() or revision_at() on models using ActiveRecord::Store?","2013-10-15 17:56:51","2013-10-15 17:57:28",0
+"RSpec Fixes","2013-09-14 06:51:26","2013-09-14 06:54:57",0
+"Different values in database and audits","2013-08-14 13:07:00","2013-09-25 07:51:09",2
+"Audit Globalize translations","2013-08-06 09:15:33","2013-08-06 09:15:33",0
+"Audit entries with duplicate version numbers","2013-08-02 11:18:55","2013-08-02 11:18:55",0
+"Is there a way to map a foreign key change to a method on the associated model?","2013-07-15 15:00:16","2013-07-15 15:00:16",0
+":only option does not blow up when table not defined","2013-07-13 14:39:32","2013-07-27 17:09:12",0
+"Audited IP needs to be the one originally making the request, not the load balancer's","2013-07-10 11:19:38","2013-07-10 11:19:38",0
+"1.1.1 asking for ruby 1.9.3","2013-07-04 18:52:10","2013-10-29 12:43:50",1
+"Rails 4 support","2013-07-04 10:57:18","2013-11-01 19:32:13",17
+"Update README to better document strong_parameters requirements.","2013-06-27 13:00:19","2013-06-27 13:03:30",0
+"Add documentation for "":on"" option, to limit which actions are audited","2013-06-27 07:14:51","2013-06-27 07:14:51",0
+"Skip execution of audited if the table doesn't exist","2013-06-18 10:21:30","2013-06-18 10:21:30",0
+"Problem with translations when destroy on 1.1.1","2013-05-28 10:13:01","2013-05-28 10:13:01",0
+"Audit multiple current_user","2013-05-27 15:29:01","2013-06-19 09:25:26",1
+"after not getting called when controller action raises an exception","2013-05-23 16:33:57","2013-05-23 16:33:57",0
+"undefined method `audit'","2013-05-21 06:31:41","2013-05-21 06:31:41",0
+"without_auditing reset logic not ensured","2013-05-15 17:53:04","2013-05-15 17:53:04",0
+"Audit.as_user","2013-05-13 16:58:03","2013-10-28 20:23:41",5
+"Prevent audit create errors on duplicate destroys","2013-05-09 17:14:52","2013-08-09 18:27:20",2
+"Destroying an audited model twice throws an error from audit writing","2013-05-09 16:52:29","2013-05-09 17:14:52",0
+"rails4 compatibility","2013-05-02 16:04:30","2013-10-22 18:58:46",2
+"Apply Conditional Validations when we specify the action on which auditing is desired","2013-04-15 06:39:13","2013-05-13 14:27:40",1
+"Apply Conditional Validations when we specify the action on which auditing is desired","2013-04-15 06:03:58","2013-04-15 06:03:58",0
+"Custom callbacks","2013-03-22 12:27:52","2013-03-30 08:32:57",1
+"Add test to ensure which attributes are not audited when uses ':only'","2013-01-26 10:21:59","2013-01-26 10:21:59",0
+"Problem in fetching data for audit table","2013-01-25 10:06:35","2013-01-25 10:06:35",0
+"username is nil","2012-12-24 09:15:44","2013-05-04 23:54:00",1
+"Missing tag for 3.0.0","2012-11-28 14:04:05","2013-04-10 18:51:43",1
+"tests should not be carried by audited gem","2012-11-28 11:42:07","2012-11-28 16:45:04",1
+"Do not ship .gemspec files.","2012-11-27 16:36:52","2012-11-27 16:36:52",0
+"Acts as Paranoid Gem","2012-11-02 20:54:14","2013-10-23 18:50:02",7
+"How to create comment upon delete via before_destroy?","2012-10-11 10:16:08","2013-04-12 21:42:10",1
+"Performance tuning audited?","2012-09-23 18:01:10","2013-07-20 19:24:30",1
+"Scope for both regular and related audits","2012-09-13 22:25:11","2012-09-13 22:25:11",0
+"README fix","2012-09-10 21:29:56","2012-09-10 21:29:56",0
+"Removing Curly braces","2012-09-10 12:46:15","2013-06-12 11:02:28",1
+"Join audits and associated_audits with a single query","2012-08-29 17:20:30","2012-08-29 17:20:30",0
+"gemspec licence and test files mismatch","2012-08-16 13:04:46","2012-08-16 13:04:46",0
+"Ensure controller isn't leaked in ActiveController around filter","2012-08-13 13:33:33","2012-08-13 13:36:37",1
+"Audits by user?","2012-08-11 00:23:19","2012-10-07 00:15:48",1
+"added disabling instructions","2012-07-19 19:45:49","2012-07-19 19:45:49",0
+"Don't track changes if they are incorrectly triggered by ActiveRecord","2012-07-18 18:16:33","2012-07-18 18:16:33",0
+"Audits stored when the change isn't 'significant', potentially unique to multiparameter attributes","2012-07-18 18:13:34","2012-07-18 18:13:34",0
+"Automatically hook `audited` into all ActiveRecord::Base classes automatically","2012-07-10 17:17:09","2013-06-07 23:58:33",4
+"Audited Gem Breaks Marshal","2012-06-18 22:51:27","2012-08-23 19:49:00",4
+"Switch default for :protect for easier usage with Rails 3.2","2012-06-14 19:15:00","2012-06-14 19:15:00",0
+"Add alias to Audit class and fix README","2012-05-11 14:27:57","2012-06-13 19:33:48",1
+"Audit doesn't get pulled in automatically with rc1","2012-05-11 04:59:45","2012-05-11 04:59:45",0
+"README Gemfile installation instructions don't work with rc gem","2012-05-08 20:09:31","2012-06-22 16:13:53",1
+"Introduce non_auditable_columns lazy method.","2012-05-08 13:50:41","2013-01-14 16:14:06",1
+"When running rspec I get this error: Undefined local variable or method `audited'","2012-05-02 18:34:45","2013-04-10 23:42:28",2
+"store the thread_id, in order to recognize all audits created on the same request","2012-04-13 15:28:00","2012-04-13 15:28:00",0
+"Autiting causes ruby process to use excessive amount of memory","2012-04-03 03:52:46","2013-07-20 19:23:30",4
+"Whitelist attributes breaks the gem","2012-03-15 09:44:04","2012-03-21 18:22:48",1
+"How can i use multiple :associated_with","2012-03-09 09:31:02","2012-10-17 10:53:47",2
+"Conflict with acts_as_paranoid/paranoia","2012-03-02 03:39:08","2013-10-18 14:55:07",3
+"Rails 3.2 undefined method `class_inheritable_reader'","2012-02-29 23:41:34","2013-01-16 20:22:19",1
+"Username is nil in Audit","2012-02-13 19:01:19","2012-07-04 03:36:59",4
+"What about auditing a collection using it's callbacks?","2012-02-10 14:13:09","2012-02-10 14:13:09",0
+"Is it possible to associate a audit with a parent_id?","2012-02-09 16:07:54","2012-02-09 16:07:54",0
+"Fix problem when using acts_as_audited in conjunction with devise","2012-01-25 03:04:40","2013-06-20 16:49:42",2
+"If a record is destroyed before it ever gets saved then it should be ignored.","2011-12-12 22:50:09","2013-03-11 10:00:51",3
+"lazy non_audited_columns method","2011-12-01 20:16:21","2012-12-10 06:44:07",2
+"audited_changes column does not work on  Mysql but works on M$Sql","2011-12-01 01:02:04","2011-12-01 01:02:04",0
+"Can't generate audits table in Oracle","2011-11-02 15:41:58","2011-11-02 15:41:58",0
+"Does not support HABTM relationships","2011-10-12 21:33:00","2012-08-28 14:36:26",8
+"Mass assignment error","2011-08-29 11:09:07","2012-04-21 08:02:40",3
+"Audit.as_user should cope with exceptions in the block?","2011-07-04 13:07:33","2013-05-13 16:45:09",1
+"AddAssociationToAudits problem when upgrading the gem","2011-06-20 19:13:49","2011-07-26 13:22:37",5
+"1.1 stable","2011-05-22 20:00:29","2011-08-04 23:26:07",1
+"Can you check whether methods exist before creating them?","2011-05-17 07:49:26","2012-02-09 12:11:37",3
+"fixing case when the variable ""controller"" is not defined","2011-05-03 14:09:20","2011-05-03 14:09:20",0
+"Audit.changes and Model.revision[#] inconsistent","2011-05-03 01:02:33","2011-05-03 05:59:45",0
+"Weird bug with db:migrate","2011-04-20 14:58:26","2012-01-25 02:05:44",2
+"Any way to append onto the end of audit_changes?","2011-04-13 20:57:46","2011-04-13 20:57:46",0
+"cannot audit when an association is lost","2011-04-01 17:36:26","2011-04-01 18:41:57",0
+"Tag and group feature","2011-03-28 12:17:26","2012-03-05 03:12:47",2
+"auditable_type is set to 'Application' instead of model_class.constantize","2011-02-27 13:04:47","2011-02-27 13:15:18",0
+"Audit.order not working as expected","2011-02-25 11:00:56","2012-06-15 21:01:02",4
+"JRuby 1.6.0.RC1 Rails 3.0.3 Glassfish Deployment","2011-02-09 20:46:52","2011-12-08 14:04:04",3
+"""version"" accessor in audited models clobbers ""version"" column (if present)","2010-12-13 22:23:42","2011-02-05 23:49:09",4
+"Schema changes issue when using object.revisions","2010-06-15 15:07:31","2010-06-15 15:08:34",0
+"Stack level too deep in User model with authlogic","2010-03-23 15:18:45","2012-09-10 12:56:03",12
+"NoMethodError (undefined method `controller_name' for nil:NilClass):  again","2010-01-16 14:25:55","2011-08-17 20:18:46",3
+"Globally disable auditing","2009-11-25 18:24:24","2012-12-27 21:48:29",4
+"Does not record user_id with Clearance","2009-09-28 22:45:06","2011-02-05 16:47:35",6
+"It's not possible to get at version 0 (i.e. before any changes) of an object.","2009-05-14 17:45:59","2011-02-05 17:24:25",3
+"Yandex API Geocoder problem","2012-10-28 19:03:08","2012-10-28 19:03:08",0
+"[Rails 2.3.x] undefined method locate","2012-09-04 08:23:44","2012-09-04 08:40:37",0
+"Fix for Rails 3.2.3 active_record.whitelist_attributes = true default config","2012-04-23 20:32:36","2012-04-23 20:32:36",0
+"Rails 3.2.rc1 ActiveRecord ConnectionNotEstablished","2011-12-20 08:34:30","2012-01-04 10:56:55",3
+"Downcasing (with support for unicode characters) all queries","2011-06-13 20:46:23","2011-11-09 19:51:00",1
+"ActiveModel compliance and usage?","2011-05-11 16:26:31","2011-05-11 16:26:31",0
+"Timezone Information","2011-05-09 19:23:40","2011-08-04 02:09:07",1
+"Using distance calculations for relations?","2010-12-30 21:11:26","2010-12-30 21:11:26",0
+"normalize_address does not normalize region or country","2010-11-06 06:31:28","2010-11-06 06:31:28",0
+"Add option to disable geocoding","2010-04-06 15:51:35","2010-04-06 15:51:36",0
+"Avoid trying to geocode unless address fields have changed","2010-02-14 22:10:37","2010-02-14 22:10:37",0

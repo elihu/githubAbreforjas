@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dspl targetNamespace="https://github.com/elihu/githubAbreforjas.git"
+<dspl 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://schemas.google.com/dspl/2010"
 	xmlns:time="http://www.google.com/publicdata/dataset/google/time"
@@ -33,26 +33,83 @@
 		</url>
 	</provider>
 	<concepts>
-		<concept id="Project">
+		<!--
+		 ### Definimos el concepto ticket como enumeracion de datos 
+		-->
+		<concept id="title">
 			<info>
-				<name><value>Project</value></name>
+				<name><value>Ticket</value></name>
 				<description>
-					<value>My list of projects.</value>
+					<value>My list of tickets.</value>
 				</description>
 			</info>
 			<type ref="string"/>
-			<property id="name">
-				<info>
-					<name><value>Name</value></name>
-					<description>
-						<value>The official name of the project</value>
-					</description>
-				</info>
-				<type ref="string" />
-			</property>
-			<table ref="projects_table" />
+			<table ref="tickets_table" />
+		</concept>
+		<!--
+		 ### Definimos las metricas de ticket
+		-->
+		<concept id="fecha_creacion">
+			<info>
+				<name>
+					<value>Fecha de creacion</value>
+				</name>
+			</info>
+			<type ref="date"/>
+		</concept>
+		
+		<concept id="fecha_actualizacion">
+			<info>
+				<name>
+					<value>Fecha de actualizacion</value>
+				</name>
+			</info>
+			<type ref="date"/>
+		</concept>
+		
+		<concept id="total_comments">
+			<info>
+				<name>
+					<value>Comentarios del tickets</value>
+				</name>
+			</info>
+			<type ref="integer"/>
 		</concept>
 	
 	</concepts>
+	<!--
+		 ### Definimos los slices
+		-->
+	<slices>
+		<slice id="tickets_slice">
+			<dimension concept="title"/>
+			<metric concept="fecha_creacion"/>
+			<metric concept="fecha_actualizacion"/>
+			<metric concept="total_comments"/>
+			<table ref="tickets_slice_table"/>
+		</slice>
+	</slices>
+	<!--
+		 ### Definimos las tablas
+		-->
+	<tables>
+		<table id="tickets_table">
+			<column id="title" type="string"/>
+			<data>
+				<file format="csv" encoding="utf-8">tickets_table.csv</file>
+			</data>
+		</table>
+		
+		<table id="countries_slice_table">
+			<column id="title" type="string"/>
+			<column id="created" type="date" format="dd/mm/yyyy"/>
+			<column id="updated" type="date" format="dd/mm/yyyy"/>
+			<column id="totalcomments" type="string"/>
+			<data>
+				<file format="csv" encoding="utf-8">tickets_slice.csv</file>
+			</data>
+		</table>
+  
+	</tables>
 
 </dspl>

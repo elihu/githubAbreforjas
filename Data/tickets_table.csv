@@ -1,0 +1,692 @@
+ ticket_id, title
+177,Improve gitmodules file parsing
+176,2.0 Support?
+175,replace rake/rdoctask with rdoc/task
+174,License missing from gemspec
+173,No method error in loop.rb
+172,Load repo upwards in specified path
+171,Grit clone using ssh agent
+169,Fix two bugs
+168,Pass options to Grit::Repo#remote_fetch
+166,Exception raised when checking out a specific commit
+165,Fix Tempfile args in Ruby 1.9 to use binary enc
+164,Implemented #163: grep search feature
+162,Use --work-tree in 'native' git method
+161,Modified to use UTF-8 encoding. (Works with Ruby 2.0)
+160,Make tests pass in Ruby 2.0.
+159,Fix deprecation error and warning in test suite
+158,Index - remove empty directories
+156,Issue 117: Fixed wrong magic comparition.
+155,Ruby 2.0 compatibility fix
+153,commit_index and commits_since don't seem te work well together. Intermitting problem 
+152,Support Ruby >= 2.0 not only 1.9
+150,"If there is non-ascii chars in the filename, diff parse failed."
+148,Grit doesn't correctly identify renames
+147,Fix git executable search on windows (improved).
+146,"Minor change, added method to Status class"
+145,Make refs support submodules
+144,use git-mktag for Grit::Tag.create_tag_object
+142,Differentiate between Modified files and Unstaged changes
+141,NoMethodError when dealing with a GPG signed commit
+139,Grit crashes when dealing with files that have accented characters in them
+138,Commit timestamps retain timezone info in Ruby 1.9.
+137,exclude git directories from git_binary function
+136,Incorrect array access fix
+135,change to the correct way of init a bare repo
+134,Handle encoding header of Git commits when possible.
+133,Grit::Repo#commits_since incorrectly lists all commits
+132,Files are deleted after commit
+131,Is it alive?
+130,strip newlines from tree entry names
+124,Parse log with options
+122,Is there any plans to rewrite grit with rugged?
+121,More efficient counting of tags/remotes/heads 
+120,Feature/workdir
+119,Feature/basename
+118,Hooks
+117,Grit::GitRuby::Internal::PackFormatError
+116,Added UTF-8 to filenames
+115,Travis
+114,Repo.git.refs should support separate .git directories
+113,Add Gemfile
+112,Grit::Actor#== method for testing equality.
+109,rev_list broken with utf-8 commit message (Encoding::CompatibilityError)
+108,Make Grit::Status ignore submodule-contained files
+107,Bump version and release on Rubygems?
+104,Make grit compatible with git projects using the gitfile repository format
+102,Add Grit::Repo::remote method
+101,Whitespaces in filenames lead to truncated names in commit stats
+100,Fixed Grit::Repo#diff to show diff for commits to unicode file names
+99,added correct location detection for win32 git binary
+98,StatusFile::ignored
+96,Commit stats for Ruby libraries does not work (Rails app does)
+95,Faster tree parsing
+94,Ability to specify line range for git blame
+93,Exception: undefined method `close' for nil:NilClass
+91,remote_list doesn't show newly created remotes
+90,Allow numeric option arguments
+88,test failures
+87,tags method does not return but burns CPU
+86,Fixing numstat parsing for cases where files have spaces in their filepath
+85,Use native cat-file instead of Grit::GitRuby#cat_file to get blob size
+84,Fix two ifs
+83,Fixed Grit::Git#options_to_argv generates invalid sequence of arguments.
+82,"Fixing a typo, :base should be :bare"
+81,Fix Repository#rev_list silently ignoring :since and :until when they're of a class other than Time
+80,Fix Repository#rev_list when called with :until
+79,Better count
+76,"Warning about ""spawn"" method redefinition"
+75,Fix git executable search on windows.
+70,Fixed commits_since method
+67,Stack Level Too Deep in unpack_compressed
+66,git config --get-all not supported
+63,unable to unpack files stored with pack.window 0
+57,Error when trying to get commits in the empty repo
+56,git.rev_list is incorrect for tags
+55,Support git hooks
+54,Index#write_tree won't remove directories
+53,Avoid spurious changes in diff-* commands
+52,Memoize index
+47,NoSuchPathError when cloning remote repo via ssh. Cloning remote also seems a little difficult.
+45,Make Repo#diff return valid blobs
+43,Use appropriate working tree in git commands
+41,grit.commits_since... SystemStackError: stack level too deep
+39,Improved repository check in Repo#initialize
+38,Grit::GitRuby::Repository.rev_list can produce results in the wrong order (parent before child)
+34,test_tag.rb 's ordering of tags disagrees with git(1).
+33,Include Rakefile and tests in gem
+32,Hunks
+31,Git pull and reset
+30,Repo.commit deletes objects that don't exist on the FS
+28,How can I get remote repository with grit?
+27,Invalid tar file on windows
+24,1.9 Encoding Issue
+21,Make remote/HEAD resolve to a commit id
+19,Tree#to_s to give sha1?
+18,Difficult to get tree sha1 from repo/head
+17,init_bare ignores errors from git-init
+16,r.head.commit is 'HEAD' in empty repo
+15,update_ref is not atomic
+14,.git/description missing on server
+12,I get nil for blob.name when fetched directly from the Repo
+10,Grit::Git#sh has problem with stdout.read on Passenger
+4,win32 popen3
+3,Need to set --work-tree
+2,Should throw errors
+2778,Process.spawn with non-existing command should set $? accordingly.
+2776,crash report - Thread deadlock in ::lock()!
+2775,crash during execution
+2772,IO#read without args on a socket should return ASCII-8BIT string
+2771,rb_io_get_io missing from C-API
+2765,Omniauth undefined method `encoding' on nil:NilClass.
+2764,Unable to unpack bootstrap gems during configure
+2758,"getsockopt with symbol level,optname fails"
+2756,still missing some socket constants
+2754,FD_CLOEXEC should be default for Ruby 2.0 compatibility
+2746,BigDecimal is too slow (need benchmark)
+2740, Too many open files - creating pipe (Errno::EMFILE)
+2737,Some failures when running the mspecs on OpenBSD
+2734,Rubinius build options override those provided to gem installs
+2732,Unable to rbx -S gem install bundler with rubinius 2.1.1 on OpenBSD
+2730,RSpec / Rails: Slow startup/run times.
+2711,Global variables with local scope
+2710,JSON.dump performance issue
+2708,crash report
+2692,Abort on running a threaded task
+2691,Installing rubinius 2.x.x fails
+2685,IO#ensure_open_and_writable might not check writability correctly
+2682,Rails server raises exception
+2679,Crash when firing up Rails app
+2678,Problem destructuring block arguments with unused (_) variables
+2674,Crash when using Pry in highly concurrent environment
+2673,Crash when very quickly creating 300+ threads
+2669,keyword arguments
+2666,Encoding related spec failures in Debian chroot
+2662,mysql2 related crashes when running specs
+2661,UDP sockets fail when sending multiple packets to non-listening port
+2641,Intern array literals (%i[a b c]) are not implemented
+2629,Add rb_class_real per #2358
+2628,Possible Mutex bug
+2627,no such file to load -- rubygems/path_support (LoadError)
+2621,crash report
+2604,LANG unset
+2603,assignment-in-if statement inconsistency
+2600,TopLevel and Object.const_set should automatically set Module#name of anonymous modules
+2598,avdi/naught test suite failing from Module#const_set
+2596,Proc#block inconsistency
+2595,Lambda literal syntax with arguments and whitespace
+2574,do-block argument parsing inconsistency
+2522,String delete/tr slowish compared to MRI
+2507,getaddrinfo causing crash under sidekiq
+2504,"Deployable engine version doesn't match local version, can't bundle"
+2478,"Dir['**/**/**'] raises ""Coercion error: nil.to_str => String failed"", ""0"
+2471,JIT problem
+2462,Nokogiri test suite crashes
+2442,Strange transient failures with Racc
+2438,Faster Primality Testing and Factorization Methods for Ruby
+2390,Make ObjectSpace.each_object(Class|Module) faster
+2380,Strip omit-frame-pointer flag
+2379,Running rake a second time the same failure should show up
+2362,sendmesg (blocking) of class BasicSocket crashes the thread of the thread pool
+2358,rb_class_real() missing from C API
+2335,Strange typing behaviour using -n option
+2331,"Building Melbourne for Rubinius, fails on armv7l"
+2327,Bunny master tests fail on Rubinius
+2303,Issue with failing DNS lookups
+2290,Different behavior for UnboundMethod than in MRI 1.9
+2243,"[rails] (ArgumentError) ""comparison of #<Enumerable::SortedElement:0xcf8ec..failed (6)"
+2241,Date._parse has different arity than 1.9.3
+2219,Benchmarking bm_loop_whileloop.rb failed on i386 with Error::EDOM
+2200,Support accessing Fiber-locals and backtraces for a Fiber
+2182,Hover state on long titles on blog looks busted
+2166,IO performance
+2155,FFI-Inline gem fails rspec
+2123,Cannot attach LLVM via FFI
+2121,Ensure the tests for these FFI projects pass on Rubinius
+2102,Crash after Guard test run
+2087,Possible Regexp issue with Oniguruma in 1.8 language mode
+2081," IO::InternalBuffer#fill_from crash when tab completing in ""xiki"" gem console"
+2078,Extend FFI::Platform::POSIX with faster native IO methods
+2077,Cleanup Array and add Reflector
+2044,eventmachine fork test failure with rubinius
+2026,Scoping on $_ var is wrong
+2006,Ensure the tests for these C-exts pass on Rubinius
+1991,Rails usage of jit_stub primitives
+1976,Group permissions
+1941,next inside of an ensure block crashes compiler
+1867,Missing concurrency primitives
+1851,Pure Rubinius C++ API
+1738,Trailing hash support in IO.popen
+1644,Rubinius::EncodingClass::Encoding::CompatibilityError
+1547,"In irb, variable is not created if it's defined in code that never runs"
+1481,#readlines significantly slower than MRI
+1099,Embed API
+1043,Static and shared libraries for rubinius
+985,CSV is much slower than MRI
+965,much slower Nokogiri iteration
+629,"Debugger ""next"" doesn't catch exception rescue's sometimes"
+575,"Be able to get/set the return value of a method at a ""safe"" location such as a RET instruction."
+151,Lifecycle conditions are disabled on restart
+150,Create Root_CA_Resistrant_License
+149,unicorn_rails start command exited with non-zero code = 10
+144,statsd_contact
+142,[fix #129] Fix register/de-register bug when process is restarted out-of-band.
+141,Explicitly exit from forked process to force file descriptors to be flushed
+140,Specify syslog server for remote logging
+135,Email notifications are missing information.
+132,Prevent from starts two processes
+130,Added support for IRC notifications
+129,god doesn't seem to properly de-register process_exit monitoring
+128,Duplicate processes starting
+127,clean_pid_file behavior seems too naive
+126,God and Ruby 2.0.0
+124,WARN: technical_worker start command exited with non-zero code = 1
+123,Support for additional groups and basic expectations in sockets
+121,god thinks its really THE GOD and kills non-monitored process mongod at times
+120,Small change to campfire contact to allow the use of a proxy to get to outside world
+119,something is wrong on the website?
+118,God::EventHandler.start will not called unless initial config file
+117,Not stop and restart Unicorn
+116,"Enable multiple gods on one system, run by non-root users."
+115,"God gets stuck in ""start"" state and never restarts process"
+114,"w.keepalive(:socket_responding => ""tcp:12345"") ignored?"
+113,Process Dependencies?
+112,Adds an upstart init script
+110,Watch#keepalive insists on using EventHandler when it is not operational
+108,God reports incorrect up status when it fails to fork
+107,Debugging custom conditions is incredibly hard
+105,Would like to add a shell return conditional which would be nice
+104,Manually changing working directory causes god to lose track of PID
+103,"When caught USR1,  reopen log file if defined."
+102,Multiple groups support
+99,Missing event system in Ubuntu linux?
+96,Your core language patches break ActiveSupport
+93,Suggestion: Rename `stop` command to `smite`
+91,"Can not stop after one ""stop start"" cycle "
+90,Conditions for child processes
+89,Missing proc_exit event
+87,Corrected Typo in god.asciidoc L#587
+85,Documentation wrong for email notifications per smtp
+83,Duplicate PIDs in .god/pids
+81,Segmentation fault with Ruby Enterprise Edition 2011.12
+80,SSL support for SMTP notifications
+77,Added Twilio Contact
+69,segfault with Ruby 1.9.3-p0 and Ubuntu 10.04
+66,Unhandled exception (StandardError): No buffer space available
+61,sugar.rb causes 5.kilobytes and 5.bytes to return the same value
+60,Stuck on init
+51,God appears to be leaving old god processes around indefinitely
+49,Beefed up Complex test method
+33,documentation problem for server_auth email configuration option
+30,Including child processes in CPU/memory usage
+27,God occasionally does not realise that a process has died and reports 0kb memory usage in log
+26,Setting working directory not working with Ruby 1.9.2 ?
+21,Increment/decrement processes
+14,disk_usage doesn't work (Ubuntu 10.4)
+12,log feature undocumented
+11,God notifications don't work properly using TLS and gmail hosted domains
+9,"Race condition makes ""god terminate"" intermittently fail"
+7,Multiple Processes/PIDs per Watch
+6,Ruby 1.9.1 and god
+5,"""god check"" failure"
+4,God segfaults on new RE with thread patches
+2,Twitter gem has changed
+1,The server is not available (or you do not have permissions to access it)
+32,Password validation on all attribute updates
+31,consuming plugin's authentication data in other languages (java)
+30,Cleaned up a bunch of markdown formatting in README
+29,Rake deprecation warning for Rails 2.3.10
+28,Make the README actually markdown
+27,Not on rubygems.org
+26,Removed duplicate recently_activated? action
+24,Could not find generator authenticated
+23,Date formatting problem
+22,Support Rails' standard plugin installation mechanism.
+21,logout does not invalidate sessions when using ActiveRecord::SessionStore
+20,Support for .cat TLD domains
+19,recently_activated missing question mark (?) in generator
+17,NoMethodError when session kept in cookie is recovered
+16,Validation with Authentication.email_regex fails on some RFC5322-valid addresses
+15,Forceful Migrations
+14,Default redirect for 'SessionsController#create' template is hard coded
+13,password validation in model should override that set in plugin
+11,Incompatible with Rails 3 bundler
+10,display welcome message with username after login
+9,SecurityError
+8,removed installation instructions as submodule
+7,Cucumber issues
+6,Move to Gemcutter?
+5,remember_me will never work?
+4,Master branch broken create user method
+3,missed issue in documentation
+2,database session store
+1,note_failed_signin unescaped string
+48,Error when attempting to install attachment_fu using bundler
+47,Depracation Fix
+46,Please pull fix for rails 1.2.6
+44,test do not run without being inside a rails project
+42,keep aspect ratio on resize option
+39,In my production machine thumbnils arte not getting created
+38,Kernel#returning => Object#tap
+34,TypeError (can't convert nil into Integer): 
+32,Server Setting Missing In Config File
+31,Solved Rails 3.0.3 temp_file size problem. Maybe this needs a more solid fix
+30,Rails3 and attachment_fu
+29,Word 2010 view
+28,Validating image dimensions before save
+27,Core Image Processor causes segmentation faults on OS X 10.6.x - 64bit.
+26,"remove ""returning"" to avoid rails 2.3.9 deprecation warnings"
+25,attachment_fu + ruby 1.9.1
+23,S3/Cloud Creates wrong public path when using separate thumbnail class
+22,Switching between different machines 
+20,batch import does not create thumbnails and does not take into account MetaModel attachment options
+18,"displaying pdf attachment inline, in the view (problem with browsers on Windows) "
+17,Rails 3
+15,bug in ImageScience when it processes .gifs
+14,"in Windows, uploading to Amazon S3 and Rackspace Cloud Files fails"
+13,Uploaded files end up in wrong place
+12,public_filename does not return relative path
+11,Mongrel_rails prefix
+10,attachement_fu and rails 3.0
+9,No such file to load -- ftools
+7,Datamapper support?
+6,Size restrictions are not properly applied to separate thumbnail class.
+5,GD2 problem
+4,Tempfiles in tmp/attachment_fu are not proactively deleted
+3,"Files not properly ""required"", ""0"
+1,validates_as_attachment does not allow for custom error messages
+2,Fix for issue #1
+1,log directory should be created if needed
+204,how to resolve this error?
+198,chroot support for thin
+197,Add Upstart support to thin init script
+195,Why after 'thin install' incorrect thin path?
+192,Empty response by giving body in Array whose total length is as large as 2GB
+184,thin install - systemD support
+183,Thin does not correctly handle output to a pipe
+180,Bundle Exec Thin Start Dies with Spaces in File Path on Windows
+172,Thin not using group permisions correctly
+171,Fix condition for String#encode!
+170,Fixes problem with connections requests keep-alive and thin
+169,Limit of only 6 concurrent connections open per client?
+167,Thin 2
+161,Too many open files when running with SSL enabled.
+151,Non-standard Keep-alive behavior
+142,Thin 1.5 can't run as another user/group
+140,--all should ignore files not matching *.yml
+138,Make log and pid files group writable
+128,HUP does not function properly unless thin is running as a daemon
+123,Non-Rack embeddable http-server connection
+112,Failing test: it 'should force kill process in pid file'
+101,"Create a ""status"" command"
+93,Thin returns 0 even when not started all instances
+87,Explicit or implicit support for `bundle exec`
+85,License
+78,about rack protocol version 
+76,[patch] commint 55c024c2 breaks unittests
+75,Starting w/ sudo on ports >1024 fails to bind w/ -u option.
+61,Unable to schedule jobs reliably in rails initializer
+40,Thin is not supporting pipelining?
+34,Empty pid file wound't let thin run
+33,Thin does not handle duplicate Header names.
+21,Thin not returning an exit code of 1 when a rails app fails to start up as a daemon.
+20,thin limits which response headers may be repeated
+17,Change to rack from rails renders prefix useless
+15,problem with send_data
+11,/etc/init.d/thin stop always fails
+8,When using request absolute URI Thin leaves PATH_INFO empty
+12,Fix Kernel::returning deprecation messages
+11,Minor (but important!) readme fix
+10,Changes to suppress Rails3 warning
+9,Don't set flash for Ajax requests
+8,uninitialized constant ResourceController
+7,R_C and MimeType::register_alias aliased mime types?
+6,Feature Request: Custom actions
+5,application_controller / application dependency check issue
+3,rescue_from not working
+2,allow scoping finds and creates by non parent
+1,Conflict with tiny_mce plugin
+1,Use better default validation msg for enum
+6,How can i refresh cache right now?
+5,cache_fu's config is conflict to config in rails3
+4,Tests don't pass
+3,tests fail/ Rails site fails
+2,"avoid overriding the ""cache_key"" method for ActiveRecord::Base children"
+1,Action caching broken
+110,Backtick problematic (simple fix)
+109,Any way to delete a tag?
+108,Maintenance status
+107,added support for --mirror option on clone command
+106,Fix: Git::Base is_remote_branch?
+105,How do I check for a simple diff?
+104,git.tag on specific SHA?
+103,implicit cast breaks RBX 
+102,diff before merge?
+101,Basic Rebase
+100,Added the ability to update bare repos using fetch
+99,Handle commits with empty lines in the message
+98,Make tests defensive against timezones
+97,Add `cherry` support to Git::Log
+95,Bug on  `def escape(s)` on lib/git/lib.rb
+93,Implement Git::Log#follow
+92,possible memory leak when calling status
+91,"`Git.init ""a.git"
+90,No way to update bare repositories from remote repository
+89,make Lib class work with git submodules
+86,Adding git rebase command.
+84,Pass options through to command.
+83,Handle commits with newlines in the message.
+82,Feature request: Support option `--follow` for logging
+81,Support Submodules
+79,get first commit from git log?
+78,allow for making diff from the current working directory to HEAD
+75,Improve temp path generation
+71,"Create ""clone --recursive"" tests (after adding support for submodules)"
+69,git.status.push_delivered_in_percent 
+64,Git::Base#in_remote_branch? and Git::Base#is_local_branch? have conflicts for branches sharing the name
+60,Additions for serving versioned files from rails/Automatically untrack deleted files.
+59,Showing commits from all branches on a given repo
+54,fix utf8 issue + remove deprecated has_rdoc
+53,Add git show <ref>:<filename>
+47,status ignores dotfiles
+44,Reset improvements
+43,Add merge_base (and merge_tree in Lib)
+39,Update escaping for file names to handle files with single quotes
+38,Added options to tag method.
+37,Added git ls-remote command to Git::Lib
+36,Multiline commits are not parsed correctly
+33,Crash if log contains foreign characters(?)
+31,Ability to list staged files only
+28,Git.clone does not allow passing in a logger
+27,Support for annotated tags.
+25,diff_parent on the first commit in a repo doesn't degrade gracefully
+24,Support for annotated release tags with Git
+23,ruby-git status and command line git status differ 
+21,Untitled
+19,Added a submodule command.
+18,Untracked files in Status but nothing to commit
+15,Clone no-checkout (-n)
+14,Added git-blame support
+13,status out of sync?
+11,complete ignored files
+8,Please update the readme to indicate that Grit is the one to use
+7,Git log should support the --decorate option
+5,"Git::Lib#escape does not work, escapes incorrectly"
+2,Objects return wrong SHA after calling 'date' 
+1,Test case failure; with (very rough) proposed fix
+228,"fails to parse ""03/10/2013 12:00 AM"", ""0"
+227,If I select a date in now: that is the same day in the parse it gives me the next matching date instead of the same day
+225,"Chronic fails to parse 'Jan 1, 12:00 noon'"
+223,Hook for language support
+222,next week sunday returning nil
+221,"Chronic.parse('string', guess: false).end gives incorrect date-time"
+216,Allow weeks to start on monday
+214,Made time_class thread safe
+210,Chronic.parse('first monday of the month at 9am') doesn't work
+205,Control how numbers on their own are treated
+203,"Does not parse ""the monday after next"" :o("
+191,Support an option to preserve timezone offset
+189,Setting time zone and thread safety
+182,Changes to Time.zone are not reflected in Chronic parsing
+179,Possible daylight savings time issue for March 10 in AST (Rails)
+177,"Getting nil trying to parse 'March 10, 2013 at 12am'"
+167,"""Last winter"" range returns ending date earlier than start date"
+151,"Issues Parsing ""Second"" as an Ordinal Number"
+147,Daylight Savings not handled properly
+141,"Chronic.parse('2000', :guess => false) returns 20:00, not the year 2000"
+134,Time zones only work with certain formats
+129,Chronic.parse('next year Jan 1 12:00') return nil
+127,Chronic does not treat PM times past 6 PM correctly
+122,:context => :past ignored?
+113,Add localization support for chronic
+104,"Chronic.parse('1200') returns 12am, not 12pm"
+88,:guess => false includes next day
+85,New context: this_year
+84,"""9 AM tomorrow"" does not parse"
+83,Different results when parsing '1st' and 'first'
+78,Summer 2003 returns as 20:03 on Jan 21st
+60,":context => :past mostly ignored when parsing time (6am, 2:00)"
+26,last day of the month
+24,"request: teach chronic to parse ""last quarter"
+9,doc
+8,
+7,blakerry 9300
+5,work
+4,Changed link to al3x's fork
+3,Sinatra 1.0 in file templates method deprecation
+2,It does not start with the following versions:
+2,Plugins need upgrade
+1,Sessions Donot Clear
+53,Create Partial from Selection not working
+52,"Failure running ""Quick Migration"", ""1"
+51,Install with Git
+49,Update Snippets/image_tag.tmSnippet
+48,New snippets and refactoring
+47,New snippet for attr_accessible
+46,Added json to Create resources Controller
+45,Add Go To Alternate File for haml with gem 'haml' in Gemfile
+44,Rails 3 refactor
+42,Update Create Resources Controller Class snippet to use JSON instead of XML
+41,Fix migration snippets for Rails 3.1 so they can find def down as well as def self.down
+36,Add support for folding if statements in ERB
+35,Cucumber syntax warning
+34,Added elsif ERB snippet
+32,add support for slim
+31,path error when using Show DB Schema for Current Class
+30,Class definition with :: doesn't seem to be honored with code coloring
+29,rails 3 generators from textmate
+27,erb indentation not quite right?
+25,Editing js.erb files in Rails 3
+23,Show error when rails path is not found
+22,opt-cmd-down does not see js.erb view files
+21,Untitled
+20,"generate {scaffold, ...} command tries to run script/generate in Rails 3"
+19,Bundle Help displaying keystrokes incorrectly
+18,insert_add_column_or_create_table.rb:9:in `unprepend': private method `split' called for #<Array:0x1011e9d60> (NoMethodError)
+16,
+15,show db schema doesnt work with ruby 1.9
+13,Running test from TextMate in a Rails 3 project
+11,Assertions
+10,How will we support Rails 2 and Rails 3 in the Commands and Snippets?
+8,Autocomplete Foreign Key Fixture Reference runtime error
+2,'Remote' is added to the global namespace
+1,$.fn.delegate overwrites the default jquery method
+74,Adding support for m1.medium instances.
+72,add license information to the gemspec
+71,support for m1.medium instances and higher versions of rake (>= 0.8.7)
+70,Odagiri 20120608
+69,Bug in describe_launch_configurations when passed a :launch_configuration_names parameter
+68,Adding m1.medium to the list of valid instance types.
+67,:availability_zone for run_instances does not work
+66,Support filtering in describe instances
+65,cloudwatch errors are not recognised by aws_error?
+64,Change of top-level namespace to fix conflict with official Amazon aws-sdk
+63,Rdoc issue:  :instance_type described as :type in request spot instance options hash.
+62,Update EC2 API to version 2011-11-01 and add support for new DescribeInstanceStatus API call
+60,add new cc2.8xlarge instance
+59,Hi! I cleaned up your code for you!
+58,ELB Error Causing Crash
+56,Added support for CloudWatch's PutMetricData
+55,warning: method redefined; discarding old confirm_product_instance
+54,Fix relative-path inclusion to work with Ruby 1.9.2 and later.
+53,Added PutMetricData to Cloudwatch portion
+52,Exception in pathlist when 'arr' is nil.
+51,Filter snapshots and volumes
+50,Need to update API version for RDS from 2009-10-16
+48,add cg1.4xlarge instance type to spot price history
+47,Add filters to snapshots
+44,awshell and example ruby file giving error
+43,Fix authorize security group ingress
+41,describe_images now supports filtering
+40,RDS create_db_instance :db_parameter_group option is coded incorrectly
+1,Managing Director
+2,Deprecation warning in Rails ~> 2.3.9
+19,correctly detect whether svn braid is up-to-date
+18,Move All Code to Lib
+17,More Informative CannotGuessType Message
+16,Braid: Error: local changes are present
+15,fork() function is unimplemented on this machine
+14,Post update git hook?
+5,"braid swallows git fetch errors, even in verbose mode"
+38,undefined method `enable' for #<Capistrano::Configuration::Namespaces::Namespace:0x007f947588a8b8> (NoMethodError)
+35,Database dump using wrong role
+8,bundler will ask for user password from capistrano
+5,EYLogger and notify start/stop are not included in the deploy:cold and deploy:rollback tasks
+4,EYLogger#post_process fails if called in the top-level namespace
+2,Misleading comments and use of sudo method in mongrel.rb recipes
+2,Checkdoc warnings
+59,add ipv6 method to Forgery::Internet
+58,avoiding white spaces in domain_name and email_address
+57,Proper name for Polish Zloty
+56,Here are some generators for Russian Taxation system
+55,Bump release and publish new gem (0.5.1?)
+54,Forgery::Address.phone returns invalid phone numbers
+53,Forgery(:internet).email_address - whitespace in email address
+51,Simplify the design and consolidate
+50,Add UserAgents to dictionaries and Internet forgery
+33,Reorganization Of Categories
+6,Separate Dictionary sets by language
+1,Extend formats to allow alpha character
+2,The loading of 'EC2' failed
+164,"PG::UndefinedTable: ERROR:  relation ""users"" does not exist"
+163,updated for rails4
+162,FIX: doc. View issue #143
+161,Can't call revision() or revision_at() on models using ActiveRecord::Store?
+160,RSpec Fixes
+159,Different values in database and audits
+158,Audit Globalize translations
+157,Audit entries with duplicate version numbers
+156,Is there a way to map a foreign key change to a method on the associated model?
+155,:only option does not blow up when table not defined
+154,"Audited IP needs to be the one originally making the request, not the load balancer's"
+153,1.1.1 asking for ruby 1.9.3
+152,Rails 4 support
+151,Update README to better document strong_parameters requirements.
+150,"Add documentation for "":on"" option, to limit which actions are audited"
+149,Skip execution of audited if the table doesn't exist
+148,Problem with translations when destroy on 1.1.1
+147,Audit multiple current_user
+146,after not getting called when controller action raises an exception
+145,undefined method `audit'
+144,without_auditing reset logic not ensured
+143,Audit.as_user
+140,Prevent audit create errors on duplicate destroys
+139,Destroying an audited model twice throws an error from audit writing
+138,rails4 compatibility
+137,Apply Conditional Validations when we specify the action on which auditing is desired
+136,Apply Conditional Validations when we specify the action on which auditing is desired
+135,Custom callbacks
+132,Add test to ensure which attributes are not audited when uses ':only'
+131,Problem in fetching data for audit table
+129,username is nil
+128,Missing tag for 3.0.0
+125,tests should not be carried by audited gem
+124,Do not ship .gemspec files.
+122,Acts as Paranoid Gem
+120,How to create comment upon delete via before_destroy?
+118,Performance tuning audited?
+117,Scope for both regular and related audits
+116,README fix
+115,Removing Curly braces
+114,Join audits and associated_audits with a single query
+113,gemspec licence and test files mismatch
+112,Ensure controller isn't leaked in ActiveController around filter
+111,Audits by user?
+110,added disabling instructions
+109,Don't track changes if they are incorrectly triggered by ActiveRecord
+108,"Audits stored when the change isn't 'significant', potentially unique to multiparameter attributes"
+107,Automatically hook `audited` into all ActiveRecord::Base classes automatically
+106,Audited Gem Breaks Marshal
+105,Switch default for :protect for easier usage with Rails 3.2
+102,Add alias to Audit class and fix README
+101,Audit doesn't get pulled in automatically with rc1
+100,README Gemfile installation instructions don't work with rc gem
+99,Introduce non_auditable_columns lazy method.
+98,When running rspec I get this error: Undefined local variable or method `audited'
+97,"store the thread_id, in order to recognize all audits created on the same request"
+95,Autiting causes ruby process to use excessive amount of memory
+93,Whitelist attributes breaks the gem
+92,How can i use multiple :associated_with
+89,Conflict with acts_as_paranoid/paranoia
+88,Rails 3.2 undefined method `class_inheritable_reader'
+86,Username is nil in Audit
+85,What about auditing a collection using it's callbacks?
+84,Is it possible to associate a audit with a parent_id?
+83,Fix problem when using acts_as_audited in conjunction with devise
+79,If a record is destroyed before it ever gets saved then it should be ignored.
+78,lazy non_audited_columns method
+77,audited_changes column does not work on  Mysql but works on M$Sql
+75,Can't generate audits table in Oracle
+72,Does not support HABTM relationships
+67,Mass assignment error
+65,Audit.as_user should cope with exceptions in the block?
+64,AddAssociationToAudits problem when upgrading the gem
+60,1.1 stable
+59,Can you check whether methods exist before creating them?
+58,"fixing case when the variable ""controller"" is not defined"
+57,Audit.changes and Model.revision[#] inconsistent
+55,Weird bug with db:migrate
+54,Any way to append onto the end of audit_changes?
+53,cannot audit when an association is lost
+52,Tag and group feature
+50,auditable_type is set to 'Application' instead of model_class.constantize
+49,Audit.order not working as expected
+47,JRuby 1.6.0.RC1 Rails 3.0.3 Glassfish Deployment
+37,"""version"" accessor in audited models clobbers ""version"" column (if present)"
+24,Schema changes issue when using object.revisions
+21,Stack level too deep in User model with authlogic
+20,NoMethodError (undefined method `controller_name' for nil:NilClass):  again
+18,Globally disable auditing
+14,Does not record user_id with Clearance
+2,It's not possible to get at version 0 (i.e. before any changes) of an object.
+25,Yandex API Geocoder problem
+24,[Rails 2.3.x] undefined method locate
+22,Fix for Rails 3.2.3 active_record.whitelist_attributes = true default config
+18,Rails 3.2.rc1 ActiveRecord ConnectionNotEstablished
+15,Downcasing (with support for unicode characters) all queries
+14,ActiveModel compliance and usage?
+13,Timezone Information
+10,Using distance calculations for relations?
+8,normalize_address does not normalize region or country
+5,Add option to disable geocoding
+3,Avoid trying to geocode unless address fields have changed
