@@ -36,7 +36,7 @@
 		<!--
 		 ### Definimos el concepto ticket como enumeracion de datos 
 		-->
-		<concept id="title">
+		<concept id="ticket_id">
 			<info>
 				<name><value>Ticket</value></name>
 				<description>
@@ -44,12 +44,22 @@
 				</description>
 			</info>
 			<type ref="string"/>
+			<property id = "title">
+				<info>
+				<name><value>Name</value></name>
+				<description>
+					<value>Name of tickets.</value>
+				</description>
+				</info>
+				<type ref="string"/>
+			</property>
 			<table ref="tickets_table" />
 		</concept>
+		
 		<!--
 		 ### Definimos las metricas de ticket
 		-->
-		<concept id="fecha_creacion">
+		<!--<concept id="created">
 			<info>
 				<name>
 					<value>Fecha de creacion</value>
@@ -58,7 +68,7 @@
 			<type ref="date"/>
 		</concept>
 		
-		<concept id="fecha_actualizacion">
+		<concept id="updated">
 			<info>
 				<name>
 					<value>Fecha de actualizacion</value>
@@ -66,8 +76,8 @@
 			</info>
 			<type ref="date"/>
 		</concept>
-		
-		<concept id="total_comments">
+		-->
+		<concept id="totalcomments">
 			<info>
 				<name>
 					<value>Comentarios del tickets</value>
@@ -82,10 +92,10 @@
 		-->
 	<slices>
 		<slice id="tickets_slice">
-			<dimension concept="title"/>
-			<metric concept="fecha_creacion"/>
-			<metric concept="fecha_actualizacion"/>
-			<metric concept="total_comments"/>
+			<dimension concept="ticket_id"/>
+			<!--<metric concept="created"/>
+			<metric concept="updated"/>-->
+			<metric concept="totalcomments"/>
 			<table ref="tickets_slice_table"/>
 		</slice>
 	</slices>
@@ -94,17 +104,19 @@
 		-->
 	<tables>
 		<table id="tickets_table">
+			<column id="ticket_id" type="string"/>
 			<column id="title" type="string"/>
 			<data>
 				<file format="csv" encoding="utf-8">tickets_table.csv</file>
 			</data>
 		</table>
 		
-		<table id="countries_slice_table">
+		<table id="tickets_slice_table">
+			<column id="ticket_id" type="string"/>
 			<column id="title" type="string"/>
-			<column id="created" type="date" format="dd/mm/yyyy"/>
-			<column id="updated" type="date" format="dd/mm/yyyy"/>
-			<column id="totalcomments" type="string"/>
+			<!--<column id="created" type="date" format="yyyy-mm-dd hh:mm:ss"/>
+			<column id="updated" type="date" format="yyyy-mm-dd hh:mm:ss"/>-->
+			<column id="totalcomments" type="integer"/>
 			<data>
 				<file format="csv" encoding="utf-8">tickets_slice.csv</file>
 			</data>
