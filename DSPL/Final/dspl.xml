@@ -117,8 +117,11 @@
 		<concept id="totaltickets">
 			<info>
 				<name>
-					<value>Nº total de tickets del proyecto</value>
+					<value>total tickets</value>
 				</name>
+				<description>
+					<value>Nº total de tickets del proyecto.</value>
+				</description>
 			</info>
 			<topic ref="repositorios"/>
 			<type ref="integer"/>
@@ -127,8 +130,11 @@
 		<concept id="opentickets">
 			<info>
 				<name>
-					<value>Nº total de tickets abiertos</value>
+					<value>open tickets</value>
 				</name>
+				<description>
+					<value>Nº total de tickets abiertos en el proyecto.</value>
+				</description>
 			</info>
 			<topic ref="repositorios"/>
 			<type ref="integer"/>
@@ -137,8 +143,11 @@
 		<concept id="gcstars">
 			<info>
 				<name>
-					<value>Nº de estrellas del proyecto</value>
+					<value>stars</value>
 				</name>
+				<description>
+					<value>Nº de estrellas del proyecto.</value>
+				</description>
 			</info>
 			<topic ref="repositorios"/>
 			<type ref="integer"/>
@@ -147,8 +156,50 @@
 		<concept id="totalrepowrites">
 			<info>
 				<name>
-					<value>Nº de commits de los proyectos</value>
+					<value>commits</value>
 				</name>
+				<description>
+					<value>Nº de commits del proyecto.</value>
+				</description>
+			</info>
+			<topic ref="repositorios"/>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="watchers">
+			<info>
+				<name>
+					<value>watchers</value>
+				</name>
+				<description>
+					<value>Nº de usuarios que han "seguido" el proyecto.</value>
+				</description>
+			</info>
+			<topic ref="repositorios"/>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="collaborators">
+			<info>
+				<name>
+					<value>collaborators</value>
+				</name>
+				<description>
+					<value>Nº usuarios colaboradores del proyecto.</value>
+				</description>
+			</info>
+			<topic ref="repositorios"/>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="size">
+			<info>
+				<name>
+					<value>size</value>
+				</name>
+				<description>
+					<value>Tamaño del proyecto en KB.</value>
+				</description>
 			</info>
 			<topic ref="repositorios"/>
 			<type ref="integer"/>
@@ -166,14 +217,17 @@
   </slice>
   
   <slice id="projects_slice">
-		<dimension concept="project"/>
-		<dimension concept="time:year"/>
-		<metric concept="totaltickets"/>
-		<metric concept="opentickets"/>
-		<metric concept="gcstars"/>
-		<metric concept="totalrepowrites"/>
-		<table ref="projects_slice_table"/>
-	</slice>
+			<dimension concept="project"/>
+			<dimension concept="time:year"/>
+			<metric concept="totaltickets"/>
+			<metric concept="opentickets"/>
+			<metric concept="gcstars"/>
+			<metric concept="totalrepowrites"/>
+			<metric concept="watchers"/>
+			<metric concept="collaborators"/>
+			<metric concept="size"/>
+			<table ref="projects_slice_table"/>
+		</slice>
 
   </slices>
 
@@ -212,6 +266,10 @@
 			<column id="opentickets" type="integer"/>
 			<column id="gcstars" type="integer"/>
 			<column id="totalrepowrites" type="integer"/>
+			<column id="watchers" type="integer"/>
+			<column id="collaborators" type="integer"/>
+			<column id="size" type="integer"/>
+			 
 			<data>
 				<file format="csv" encoding="utf-8">projects_slice.csv</file>
 			</data>

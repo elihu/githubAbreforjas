@@ -18,11 +18,11 @@ if len(sys.argv) == 3:
 	slices = codecs.open("projects_slice.csv", "w", "utf-8") #Abrir slices
 	table = codecs.open("projects_table.csv", "w", "utf-8") #Abrir table
 	
-	'''fichero.write("project, name, homepage, year, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, colaborators, comments, update_date, size, language")'''
+	'''fichero.write("project, name, homepage, year, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, collaborators, comments, update_date, size, language")'''
 	
 	
 	table.write("project, name, description\n");
-	slices.write("project, year, totaltickets, opentickets, gcstars, totalrepowrites\n")
+	slices.write("project, year, totaltickets, opentickets, gcstars, totalrepowrites, watchers, collaborators, size\n")
 	
 	for i in range(i, j):
 		repo = repositorios[i]
@@ -68,10 +68,12 @@ if len(sys.argv) == 3:
 			slices.write(str(count(repo.get_milestones())) + '", "')
 		except :
 			slices.write(str(0) +'", "')
+			'''
 		try :
-			slices.write(str(repo.watchers_count) + '", "')
+			slices.write(', "'+ str(repo.watchers_count) + '"')
 		except :
-			slices.write(str(0) +'", "')
+			slices.write(', "'+ str(0) +'"')
+		'''
 		try :
 			slices.write(str(repo.forks_count) + '", "')
 		except :
@@ -104,11 +106,13 @@ if len(sys.argv) == 3:
 			slices.write(str(count(repo.get_downloads())) + '", "')
 		except :
 			slices.write('0", "')
+			'''
 		try :
-			slices.write(str(count(repo.get_collaborators())) + '", "')
+			slices.write(', "' + str(count(repo.get_collaborators())) + '"')
 		except :
-			slices.write('0", "')
-		try :
+			slices.write(', "' + '0"')
+			
+		'''try :
 			slices.write(str(count(repo.get_comments())) + '", "')
 		except :
 			slices.write('0", "')
@@ -116,11 +120,14 @@ if len(sys.argv) == 3:
 			slices.write(str(repo.updated_at) + '", "')
 		except :
 			slices.write('", "')
+			'''
+			
 		try :
-			slices.write(str(repo.size) + '", "')
+			slices.write(', "' + str(repo.size) + '"')
 		except :
-			slices.write('", "')
-		try :
+			slices.write('""')
+			
+		'''try :
 			slices.write(repo.language + '"')
 		except :
 			slices.write('"')'''
