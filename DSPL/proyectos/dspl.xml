@@ -95,15 +95,6 @@
 			<type ref="integer"/>
 		</concept>
 		
-		<concept id="language">
-			<info>
-				<name>
-					<value>Lenguaje de programación del proyecto</value>
-				</name>
-			</info>
-			<type ref="string"/>
-		</concept>
-		
 		<concept id="totalrepowrites">
 			<info>
 				<name>
@@ -124,7 +115,6 @@
 			<metric concept="opentickets"/>
 			<metric concept="gcstars"/>
 			<metric concept="totalrepowrites"/>
-			<metric concept="language"/>
 			<table ref="projects_slice_table"/>
 		</slice>
 	</slices>
@@ -148,7 +138,6 @@
 			<column id="opentickets" type="integer"/>
 			<column id="gcstars" type="integer"/>
 			<column id="totalrepowrites" type="integer"/>
-			<column id="language" type="string"/>
 			<data>
 				<file format="csv" encoding="utf-8">projects_slice.csv</file>
 			</data>
