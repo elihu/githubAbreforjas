@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspl xmlns="http://schemas.google.com/dspl/2010"
+    xmlns:geo="http://www.google.com/publicdata/dataset/google/geo"
+    xmlns:geo_usa="http://www.google.com/publicdata/dataset/google/geo/us"
+    xmlns:time="http://www.google.com/publicdata/dataset/google/time"
+    xmlns:quantity="http://www.google.com/publicdata/dataset/google/quantity"
+    xmlns:entity="http://www.google.com/publicdata/dataset/google/entity">
+
+  <import namespace="http://www.google.com/publicdata/dataset/google/time"/>
+  <import namespace="http://www.google.com/publicdata/dataset/google/quantity"/>
+  <import namespace="http://www.google.com/publicdata/dataset/google/entity"/>
+  <import namespace="http://www.google.com/publicdata/dataset/google/geo"/>
+  
+  <info>
+    <name>
+      <value>My statistics Github</value>
+    </name>
+    <description>
+      <value>Some very interesting statistics about users on github</value>
+    </description>
+    <url>
+      <value>https://github.com/elihu/githubAbreforjas.git</value>
+    </url>
+  </info>
+
+  <provider>
+    <name>
+      <value>Github</value>
+    </name>
+    <url>
+      <value>https://github.com</value>
+    </url>
+  </provider>
+  
+  <topics>
+    <topic id="repositorios">
+      <info>
+        <name><value>Repositorios</value></name>
+      </info>
+    </topic>
+    <topic id="usuarios">
+      <info>
+        <name><value>Usuarios</value></name>
+      </info>
+    </topic>
+  </topics>
+
+  <concepts>
+	  
+	  <concept id="github">
+      <info>
+        <name>
+          <value>Github</value>
+        </name>
+        <description>
+          <value>Lista de usuarios</value>
+        </description>
+      </info>
+      <type ref="string"/>
+      <property id="nombre">
+        <info>
+          <name><value xml:lang="en">Datos</value></name>
+          <description>
+            <value xml:lang="en">Los datos de Github</value>
+          </description>
+        </info>
+        <type ref="string"/>
+      </property>
+      <table ref="github_table"/>
+    </concept>
+    
+    <concept id="numeroInscritos">
+      <info>
+        <name>
+          <value>Numero de inscritos</value>
+        </name>
+        <description>
+          <value>Numero de inscritos a una fecha</value>
+        </description>
+      </info>
+      <topic ref="usuarios"/>
+      <type ref="integer"/>
+    </concept>
+
+  </concepts>
+
+  <slices>
+
+  <slice id="github_slice">
+    <dimension concept="github"/>
+    <dimension concept="time:year"/>
+    <metric concept="numeroInscritos"/>
+    <table ref="github_slice_table"/>
+  </slice>
+
+  </slices>
+
+  <tables>
+	  
+	<table id="github_table">
+      <column id="github" type="string"/>
+      <column id="nombre" type="string"/>
+      <data>
+        <file format="csv" encoding="utf-8">github_table.csv</file>
+      </data>
+    </table>
+    
+    <table id="github_slice_table">
+		<column id="github" type="string"/>
+		<column id="year" type="date" format="yyyy"/>
+		<column id="numeroInscritos" type="integer"/>
+		<data>
+			<file format="csv" encoding="utf-8">github_slice_table.csv</file>
+		</data>
+	</table>
+    
+  </tables>
+
+</dspl>
