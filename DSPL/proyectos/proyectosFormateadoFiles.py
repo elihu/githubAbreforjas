@@ -15,7 +15,7 @@ if len(sys.argv) == 3:
 	datos = github.Github("u", "c")
 
 	repositorios = datos.get_repos()
-	slices = codecs.open("projects_slices.csv", "w", "utf-8") #Abrir slices
+	slices = codecs.open("projects_slice.csv", "w", "utf-8") #Abrir slices
 	table = codecs.open("projects_table.csv", "w", "utf-8") #Abrir table
 	
 	'''fichero.write("project, name, homepage, year, description, totaltickets, opentickets, gcstars, gcactivities, ghwatchers, repoforks, repoacces, totalrepowrites, title, url, downloads, colaborators, comments, update_date, size, language")'''
@@ -33,22 +33,22 @@ if len(sys.argv) == 3:
 			slices.write('""')
 			table.write('""')
 		try :
-			slices.write(', "'+repo.name + '"')
+			table.write(', "'+repo.name + '"')
 		except :
-			slices.write('""')
+			table.write('""')
 		'''try :
 			slices.write(repo.homepage + '", "')
 		except :
 			slices.write('", "')
 		'''	
 		try :
-			table.write(', "'+ str(repo.created_at)[0:4] + '"')
-		except :
-			table.write('""')
-		try :
-			slices.write(', "' + repo.description + '"')
+			slices.write(', "'+ str(repo.created_at)[0:4] + '"')
 		except :
 			slices.write('""')
+		try :
+			table.write(', "' + repo.description + '"')
+		except :
+			table.write('""')
 		
 		try:
 			slices.write(', "' + str(count(repo.get_issues()))+ '"')
