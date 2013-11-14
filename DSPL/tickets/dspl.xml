@@ -20,7 +20,7 @@
 			<value>Some very interesting statistics about GitHub</value>
 		</description>
 		<url>
-			<value>https://github.com/elihu/githubAbreforjas.git/README</value>
+			<value>https://github.com/elihu/githubAbreforjas.git/</value>
 		</url>
 	</info>
 
@@ -85,6 +85,15 @@
 			</info>
 			<type ref="integer"/>
 		</concept>
+		
+		<concept id="created">
+			<info>
+				<name>
+					<value>Fechas de creacion</value>
+				</name>
+			</info>
+			<type ref="date"/>
+		</concept>
 	
 	</concepts>
 	<!--
@@ -93,8 +102,8 @@
 	<slices>
 		<slice id="tickets_slice">
 			<dimension concept="ticket_id"/>
-			<!--<metric concept="created"/>
-			<metric concept="updated"/>-->
+			<metric concept="created"/>
+			<!--<metric concept="updated"/>-->
 			<metric concept="totalcomments"/>
 			<table ref="tickets_slice_table"/>
 		</slice>
@@ -114,8 +123,8 @@
 		<table id="tickets_slice_table">
 			<column id="ticket_id" type="string"/>
 			<column id="title" type="string"/>
-			<!--<column id="created" type="date" format="yyyy-mm-dd hh:mm:ss"/>
-			<column id="updated" type="date" format="yyyy-mm-dd hh:mm:ss"/>-->
+			<column id="created" type="date" format="yyyy-MM-dd HH:mm:ss"/>
+			<!--<column id="updated" type="date" format="yyyy-mm-dd hh:mm:ss"/>-->
 			<column id="totalcomments" type="integer"/>
 			<data>
 				<file format="csv" encoding="utf-8">tickets_slice.csv</file>
