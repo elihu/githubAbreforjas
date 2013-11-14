@@ -1,10 +1,3 @@
-"project"," name"," description"
-29,"jsawesome","Awesome JSON"
-31,"jspec","A JavaScript BDD Testing Library"
-35,"exception_logger","Unmaintained. Sorry."
-36,"ambition","include Enumerable — Unmaintained"
-42,"restful-authentication","Generates common user authentication code for Rails/Merb, with a full test/unit and rspec suite and optional Acts as State Machine support built-in."
-43,"attachment_fu","Treat an ActiveRecord model as a file attachment, storing its patch, size, content type, etc."
-47,"bong","A benchmarking helper for httperf."
-48,"microsis","SUPER OLD STUFF"
-52,"s3","psuedo s3 protocol for mozilla browsers"
+project, year, totaltickets, opentickets, gcstars, totalrepowrites
+"28", "2008"
+"29", "2008"
