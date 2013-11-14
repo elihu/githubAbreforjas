@@ -32,6 +32,7 @@
 			<value>https://github.com/elihu/githubAbreforjas.git</value>
 		</url>
 	</provider>
+	
 	<concepts>
 		<!--
 		 ### Definimos el concepto ticket como enumeracion de datos 
@@ -59,16 +60,19 @@
 		<!--
 		 ### Definimos las metricas de ticket
 		-->
-		<!--<concept id="created">
+		<concept id="created">
 			<info>
 				<name>
-					<value>Fecha de creacion</value>
+					<value>Fechas de creacion</value>
 				</name>
+				<description>
+					<value>Fecha de creacion de cada ticket</value>
+				</description>
 			</info>
 			<type ref="date"/>
 		</concept>
 		
-		<concept id="updated">
+		<!--<concept id="updated">
 			<info>
 				<name>
 					<value>Fecha de actualizacion</value>
@@ -80,20 +84,17 @@
 		<concept id="totalcomments">
 			<info>
 				<name>
-					<value>Comentarios del tickets</value>
+					<value>Comentarios del ticket</value>
 				</name>
+				<description>
+					<value>Numero de comentarios en cada ticket</value>
+				</description>
 			</info>
+			
 			<type ref="integer"/>
 		</concept>
 		
-		<concept id="created">
-			<info>
-				<name>
-					<value>Fechas de creacion</value>
-				</name>
-			</info>
-			<type ref="date"/>
-		</concept>
+		
 	
 	</concepts>
 	<!--

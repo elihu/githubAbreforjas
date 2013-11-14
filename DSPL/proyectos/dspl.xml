@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspl 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://schemas.google.com/dspl/2010"
+	xmlns:time="http://www.google.com/publicdata/dataset/google/time"
+	xmlns:geo="http://www.google.com/publicdata/dataset/google/geo"
+	xmlns:entity="http://www.google.com/publicdata/dataset/google/entity"
+	xmlns:quantity="http://www.google.com/publicdata/dataset/google/quantity">
+
+	<import namespace="http://www.google.com/publicdata/dataset/google/time"/>
+	<import namespace="http://www.google.com/publicdata/dataset/google/entity"/>
+	<import namespace="http://www.google.com/publicdata/dataset/google/geo"/>
+	<import namespace="http://www.google.com/publicdata/dataset/google/quantity"/>
+
+	<info>
+		<name>
+			<value>GitHub statistics</value>
+		</name>
+		<description>
+			<value>Some very interesting statistics about GitHub</value>
+		</description>
+		<url>
+			<value>https://github.com/elihu/githubAbreforjas.git/</value>
+		</url>
+	</info>
+
+	<provider>
+		<name>
+			<value>Module GitHub for AbreForjas</value>
+		</name>
+		<url>
+			<value>https://github.com/elihu/githubAbreforjas.git</value>
+		</url>
+	</provider>
+	<concepts>
+		<!--
+		 ### Definimos el concepto project como enumeracion de datos 
+		-->
+		<concept id="project" extends="entity:entity">
+			<info>
+				<name><value>Projects</value></name>
+				<description>
+					<value>My list of projects.</value>
+				</description>
+			</info>
+			<type ref="string"/>
+			<property id = "name">
+				<info>
+				<name><value>Name</value></name>
+				<description>
+					<value>Name of projects.</value>
+				</description>
+				</info>
+				<type ref="string"/>
+			</property>
+			<property id = "description">
+				<info>
+				<name><value>Description </value></name>
+				<description>
+					<value>Description of projects.</value>
+				</description>
+				</info>
+				<type ref="string"/>
+			</property>
+			<table ref="projects_table" />
+		</concept>
+		
+		<!--
+		 ### Definimos las metricas de proyecto
+		-->
+		<concept id="totaltickets">
+			<info>
+				<name>
+					<value>Nº total de tickets del proyecto</value>
+				</name>
+			</info>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="opentickets">
+			<info>
+				<name>
+					<value>Nº total de tickets abiertos</value>
+				</name>
+			</info>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="gcstars">
+			<info>
+				<name>
+					<value>Nº de estrellas del proyecto</value>
+				</name>
+			</info>
+			<type ref="integer"/>
+		</concept>
+		
+		<concept id="language">
+			<info>
+				<name>
+					<value>Lenguaje de programación del proyecto</value>
+				</name>
+			</info>
+			<type ref="string"/>
+		</concept>
+		
+		<concept id="totalrepowrites">
+			<info>
+				<name>
+					<value>Nº de commits de los proyectos</value>
+				</name>
+			</info>
+			<type ref="integer"/>
+		</concept>	
+	</concepts>
+	<!--
+		 ### Definimos los slices
+		-->
+	<slices>
+		<slice id="projects_slice">
+			<dimension concept="project"/>
+			<dimension concept="time:year"/>
+			<metric concept="totaltickets"/>
+			<metric concept="opentickets"/>
+			<metric concept="gcstars"/>
+			<metric concept="totalrepowrites"/>
+			<metric concept="language"/>
+			<table ref="projects_slice_table"/>
+		</slice>
+	</slices>
+	<!--
+		 ### Definimos las tablas
+		-->
+	<tables>
+		<table id="projects_table">
+			<column id="project" type="string"/>
+			<column id="name" type="string"/>
+			<column id="description" type="string"/>
+			<data>
+				<file format="csv" encoding="utf-8">projects_table.csv</file>
+			</data>
+		</table>
+		
+		<table id="projects_slice_table">
+			<column id="project" type="string"/>
+			<column id="year" type="date" format="yyyy"/>
+			<column id="totaltickets" type="integer"/>
+			<column id="opentickets" type="integer"/>
+			<column id="gcstars" type="integer"/>
+			<column id="totalrepowrites" type="integer"/>
+			<column id="language" type="string"/>
+			<data>
+				<file format="csv" encoding="utf-8">projects_slice.csv</file>
+			</data>
+		</table>
+  
+	</tables>
+
+</dspl>
