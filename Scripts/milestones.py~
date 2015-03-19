@@ -8,13 +8,11 @@ def count(param):
 		acum = acum + 1
 	return acum
 		
-if len(sys.argv) == 5:
+if len(sys.argv) == 3:
         i = int(sys.argv[1])
         j = int(sys.argv[2])
-	user = sys.argv[3]
-	passwd = sys.argv[4]
 	
-	datos = github.Github(user, passwd)
+	datos = github.Github("usuario", "contraseña")
 
 	repositorios = datos.get_repos()
 	for i in range(i, j):
@@ -48,7 +46,7 @@ if len(sys.argv) == 5:
 				print "descartado"
 					
 else:
-        print ("Este programa necesita cuatro parámetro")
-	print ("Uso: $python proyectos.py n0 n1 user passwd")
+        print ("Este programa necesita un parámetro")
+	print ("Uso: $python proyectos.py n0 n1")
 
 

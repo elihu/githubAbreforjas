@@ -24,7 +24,7 @@ if len(sys.argv) == 5:
 	
 	
 	table.write("project, name, description\n");
-	slices.write("project, year, totaltickets, opentickets, gcstars, totalrepowrites, watchers, collaborators, size, language\n")
+	slices.write("project, year, totaltickets, opentickets, gcstars, totalrepowrites, watchers, collaborators, size\n")
 	
 	for i in range(i, j):
 		repo = repositorios[i]

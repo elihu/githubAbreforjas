@@ -14,7 +14,7 @@ if len(sys.argv) == 5: #Para poner un rango de usuarios que queremos ver
 	user = sys.argv[3]
 	passw = sys.argv[4]
 	
-	datos = github.Github(user, password)
+	datos = github.Github("user", "password")
 	repositorios = datos.get_repos()
 	for i in range(i, j) :
 		repositorio = repositorios[i]
@@ -49,5 +49,5 @@ if len(sys.argv) == 5: #Para poner un rango de usuarios que queremos ver
 		print "##############################################"
 		print
 else :
-	print ("Este programa necesita cuatro parametros") 
-	print ("Uso: $python proyectos.py n0 n1 user passwd")
+	print ("Este programa necesita dos parametros") 
+	print ("Uso: $python proyectos.py n0 n1")
