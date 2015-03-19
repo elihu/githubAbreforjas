@@ -203,7 +203,19 @@
 			</info>
 			<topic ref="repositorios"/>
 			<type ref="integer"/>
-		</concept>	
+		</concept>
+		<concept id="language">
+			<info>
+				<name>
+					<value>language</value>
+				</name>
+				<description>
+					<value>Programming language used.</value>
+				</description>
+			</info>
+			<topic ref="repositorios"/>
+			<type ref="string"/>
+		</concept>		
 
   </concepts>
 
